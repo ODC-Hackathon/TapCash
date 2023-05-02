@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
+		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
+		DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950162A017F6800FF8715 /* HomeVC.swift */; };
+		DE69501A2A017F6800FF8715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6950182A017F6800FF8715 /* Main.storyboard */; };
+		DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE69501B2A017F6800FF8715 /* TapCash.xcdatamodeld */; };
+		DE69501F2A017F6A00FF8715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE69501E2A017F6A00FF8715 /* Assets.xcassets */; };
+		DE6950222A017F6A00FF8715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6950202A017F6A00FF8715 /* LaunchScreen.storyboard */; };
+		DE69502D2A017F6A00FF8715 /* TapCashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69502C2A017F6A00FF8715 /* TapCashTests.swift */; };
+		DE6950372A017F6A00FF8715 /* TapCashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950362A017F6A00FF8715 /* TapCashUITests.swift */; };
+		DE6950392A017F6A00FF8715 /* TapCashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950382A017F6A00FF8715 /* TapCashUITestsLaunchTests.swift */; };
+		DE6950512A018A8C00FF8715 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950502A018A8C00FF8715 /* User.swift */; };
+		DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950522A018AAF00FF8715 /* Protocols.swift */; };
+		DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950542A018ABE00FF8715 /* NetworkServices.swift */; };
+		DE6950572A018AD000FF8715 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950562A018AD000FF8715 /* ViewModel.swift */; };
+		DE69505A2A018C1C00FF8715 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950592A018C1C00FF8715 /* Kingfisher */; };
+		DE69505D2A018C3B00FF8715 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE69505C2A018C3B00FF8715 /* Alamofire */; };
+		DE6950602A018EA500FF8715 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = DE69505F2A018EA500FF8715 /* Collections */; };
+		DE6950622A018EA500FF8715 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950612A018EA500FF8715 /* DequeModule */; };
+		DE6950642A018EA500FF8715 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950632A018EA500FF8715 /* OrderedCollections */; };
+		DE6950672A0190E500FF8715 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950662A0190E500FF8715 /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE6950292A017F6A00FF8715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE6950072A017F6800FF8715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE69500E2A017F6800FF8715;
+			remoteInfo = TapCash;
+		};
+		DE6950332A017F6A00FF8715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE6950072A017F6800FF8715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE69500E2A017F6800FF8715;
+			remoteInfo = TapCash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE6950142A017F6800FF8715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE6950162A017F6800FF8715 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		DE6950192A017F6800FF8715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE69501C2A017F6800FF8715 /* TapCash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TapCash.xcdatamodel; sourceTree = "<group>"; };
+		DE69501E2A017F6A00FF8715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE6950212A017F6A00FF8715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE6950232A017F6A00FF8715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6950282A017F6A00FF8715 /* TapCashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapCashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE69502C2A017F6A00FF8715 /* TapCashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCashTests.swift; sourceTree = "<group>"; };
+		DE6950322A017F6A00FF8715 /* TapCashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapCashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6950362A017F6A00FF8715 /* TapCashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCashUITests.swift; sourceTree = "<group>"; };
+		DE6950382A017F6A00FF8715 /* TapCashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE6950502A018A8C00FF8715 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE6950522A018AAF00FF8715 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		DE6950542A018ABE00FF8715 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		DE6950562A018AD000FF8715 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE69500C2A017F6800FF8715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6950642A018EA500FF8715 /* OrderedCollections in Frameworks */,
+				DE6950602A018EA500FF8715 /* Collections in Frameworks */,
+				DE6950622A018EA500FF8715 /* DequeModule in Frameworks */,
+				DE69505A2A018C1C00FF8715 /* Kingfisher in Frameworks */,
+				DE69505D2A018C3B00FF8715 /* Alamofire in Frameworks */,
+				DE6950672A0190E500FF8715 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6950252A017F6A00FF8715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE69502F2A017F6A00FF8715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE6950062A017F6800FF8715 = {
+			isa = PBXGroup;
+			children = (
+				DE6950112A017F6800FF8715 /* TapCash */,
+				DE69502B2A017F6A00FF8715 /* TapCashTests */,
+				DE6950352A017F6A00FF8715 /* TapCashUITests */,
+				DE6950102A017F6800FF8715 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE6950102A017F6800FF8715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE69500F2A017F6800FF8715 /* TapCash.app */,
+				DE6950282A017F6A00FF8715 /* TapCashTests.xctest */,
+				DE6950322A017F6A00FF8715 /* TapCashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE6950112A017F6800FF8715 /* TapCash */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950452A01899600FF8715 /* Assets */,
+				DE6950462A0189A000FF8715 /* Delegates */,
+				DE6950492A0189B800FF8715 /* Models */,
+				DE6950482A0189AF00FF8715 /* ViewModels */,
+				DE6950472A0189A900FF8715 /* Views */,
+				DE6950182A017F6800FF8715 /* Main.storyboard */,
+				DE6950232A017F6A00FF8715 /* Info.plist */,
+				DE69501B2A017F6800FF8715 /* TapCash.xcdatamodeld */,
+			);
+			path = TapCash;
+			sourceTree = "<group>";
+		};
+		DE69502B2A017F6A00FF8715 /* TapCashTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE69502C2A017F6A00FF8715 /* TapCashTests.swift */,
+			);
+			path = TapCashTests;
+			sourceTree = "<group>";
+		};
+		DE6950352A017F6A00FF8715 /* TapCashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950362A017F6A00FF8715 /* TapCashUITests.swift */,
+				DE6950382A017F6A00FF8715 /* TapCashUITestsLaunchTests.swift */,
+			);
+			path = TapCashUITests;
+			sourceTree = "<group>";
+		};
+		DE6950452A01899600FF8715 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DE69501E2A017F6A00FF8715 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DE6950462A0189A000FF8715 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950122A017F6800FF8715 /* AppDelegate.swift */,
+				DE6950142A017F6800FF8715 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DE6950472A0189A900FF8715 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE69504D2A018A3100FF8715 /* HomeScreen */,
+				DE69504C2A018A2800FF8715 /* LaunchScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE6950482A0189AF00FF8715 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950562A018AD000FF8715 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DE6950492A0189B800FF8715 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE69504A2A0189C700FF8715 /* NetworkServices */,
+				DE6950502A018A8C00FF8715 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE69504A2A0189C700FF8715 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950522A018AAF00FF8715 /* Protocols.swift */,
+				DE6950542A018ABE00FF8715 /* NetworkServices.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		DE69504C2A018A2800FF8715 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950202A017F6A00FF8715 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		DE69504D2A018A3100FF8715 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DE6950162A017F6800FF8715 /* HomeVC.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE69500E2A017F6800FF8715 /* TapCash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE69503C2A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCash" */;
+			buildPhases = (
+				DE69500B2A017F6800FF8715 /* Sources */,
+				DE69500C2A017F6800FF8715 /* Frameworks */,
+				DE69500D2A017F6800FF8715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapCash;
+			packageProductDependencies = (
+				DE6950592A018C1C00FF8715 /* Kingfisher */,
+				DE69505C2A018C3B00FF8715 /* Alamofire */,
+				DE69505F2A018EA500FF8715 /* Collections */,
+				DE6950612A018EA500FF8715 /* DequeModule */,
+				DE6950632A018EA500FF8715 /* OrderedCollections */,
+				DE6950662A0190E500FF8715 /* Lottie */,
+			);
+			productName = TapCash;
+			productReference = DE69500F2A017F6800FF8715 /* TapCash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE6950272A017F6A00FF8715 /* TapCashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE69503F2A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCashTests" */;
+			buildPhases = (
+				DE6950242A017F6A00FF8715 /* Sources */,
+				DE6950252A017F6A00FF8715 /* Frameworks */,
+				DE6950262A017F6A00FF8715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE69502A2A017F6A00FF8715 /* PBXTargetDependency */,
+			);
+			name = TapCashTests;
+			productName = TapCashTests;
+			productReference = DE6950282A017F6A00FF8715 /* TapCashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE6950312A017F6A00FF8715 /* TapCashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE6950422A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCashUITests" */;
+			buildPhases = (
+				DE69502E2A017F6A00FF8715 /* Sources */,
+				DE69502F2A017F6A00FF8715 /* Frameworks */,
+				DE6950302A017F6A00FF8715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE6950342A017F6A00FF8715 /* PBXTargetDependency */,
+			);
+			name = TapCashUITests;
+			productName = TapCashUITests;
+			productReference = DE6950322A017F6A00FF8715 /* TapCashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE6950072A017F6800FF8715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DE69500E2A017F6800FF8715 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DE6950272A017F6A00FF8715 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DE69500E2A017F6800FF8715;
+					};
+					DE6950312A017F6A00FF8715 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DE69500E2A017F6800FF8715;
+					};
+				};
+			};
+			buildConfigurationList = DE69500A2A017F6800FF8715 /* Build configuration list for PBXProject "TapCash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE6950062A017F6800FF8715;
+			packageReferences = (
+				DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DE69505B2A018C3B00FF8715 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				DE6950652A0190E500FF8715 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = DE6950102A017F6800FF8715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE69500E2A017F6800FF8715 /* TapCash */,
+				DE6950272A017F6A00FF8715 /* TapCashTests */,
+				DE6950312A017F6A00FF8715 /* TapCashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE69500D2A017F6800FF8715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6950222A017F6A00FF8715 /* LaunchScreen.storyboard in Resources */,
+				DE69501F2A017F6A00FF8715 /* Assets.xcassets in Resources */,
+				DE69501A2A017F6800FF8715 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6950262A017F6A00FF8715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6950302A017F6A00FF8715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE69500B2A017F6800FF8715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
+				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
+				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
+				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
+				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
+				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
+				DE6950572A018AD000FF8715 /* ViewModel.swift in Sources */,
+				DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE6950242A017F6A00FF8715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE69502D2A017F6A00FF8715 /* TapCashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE69502E2A017F6A00FF8715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6950372A017F6A00FF8715 /* TapCashUITests.swift in Sources */,
+				DE6950392A017F6A00FF8715 /* TapCashUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE69502A2A017F6A00FF8715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE69500E2A017F6800FF8715 /* TapCash */;
+			targetProxy = DE6950292A017F6A00FF8715 /* PBXContainerItemProxy */;
+		};
+		DE6950342A017F6A00FF8715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE69500E2A017F6800FF8715 /* TapCash */;
+			targetProxy = DE6950332A017F6A00FF8715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE6950182A017F6800FF8715 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE6950192A017F6800FF8715 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE6950202A017F6A00FF8715 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE6950212A017F6A00FF8715 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE69503A2A017F6A00FF8715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE69503B2A017F6A00FF8715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE69503D2A017F6A00FF8715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapCash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE69503E2A017F6A00FF8715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapCash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE6950402A017F6A00FF8715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapCash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TapCash";
+			};
+			name = Debug;
+		};
+		DE6950412A017F6A00FF8715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapCash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TapCash";
+			};
+			name = Release;
+		};
+		DE6950432A017F6A00FF8715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapCash;
+			};
+			name = Debug;
+		};
+		DE6950442A017F6A00FF8715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.TapCashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapCash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE69500A2A017F6800FF8715 /* Build configuration list for PBXProject "TapCash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE69503A2A017F6A00FF8715 /* Debug */,
+				DE69503B2A017F6A00FF8715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE69503C2A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE69503D2A017F6A00FF8715 /* Debug */,
+				DE69503E2A017F6A00FF8715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE69503F2A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6950402A017F6A00FF8715 /* Debug */,
+				DE6950412A017F6A00FF8715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE6950422A017F6A00FF8715 /* Build configuration list for PBXNativeTarget "TapCashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6950432A017F6A00FF8715 /* Debug */,
+				DE6950442A017F6A00FF8715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DE69505B2A018C3B00FF8715 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE6950652A0190E500FF8715 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE6950592A018C1C00FF8715 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DE69505C2A018C3B00FF8715 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE69505B2A018C3B00FF8715 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DE69505F2A018EA500FF8715 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		DE6950612A018EA500FF8715 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		DE6950632A018EA500FF8715 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		DE6950662A0190E500FF8715 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6950652A0190E500FF8715 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DE69501B2A017F6800FF8715 /* TapCash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE69501C2A017F6800FF8715 /* TapCash.xcdatamodel */,
+			);
+			currentVersion = DE69501C2A017F6800FF8715 /* TapCash.xcdatamodel */;
+			path = TapCash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DE6950072A017F6800FF8715 /* Project object */;
+}
