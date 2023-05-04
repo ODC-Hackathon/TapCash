@@ -156,14 +156,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		1EDE86102A01BACD00B9C156 /* LoginScreen */ = {
-			isa = PBXGroup;
-			children = (
-				1EDE86112A01BB1200B9C156 /* LoginVC.swift */,
-			);
-			path = LoginScreen;
-			sourceTree = "<group>";
-		};
 		DE6950062A017F6800FF8715 = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +229,7 @@
 		DE6950472A0189A900FF8715 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1EDE86102A01BACD00B9C156 /* LoginScreen */,
+				DE8BF4922A041CB8008519B5 /* AuthenticationScreens */,
 				DE69504D2A018A3100FF8715 /* HomeScreen */,
 				DE69504C2A018A2800FF8715 /* LaunchScreen */,
 			);
@@ -284,6 +276,14 @@
 				DE6950162A017F6800FF8715 /* HomeVC.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DE8BF4922A041CB8008519B5 /* AuthenticationScreens */ = {
+			isa = PBXGroup;
+			children = (
+				1EDE86112A01BB1200B9C156 /* LoginVC.swift */,
+			);
+			path = AuthenticationScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
