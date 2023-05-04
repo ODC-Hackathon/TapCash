@@ -22,6 +22,7 @@
 		1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */; };
 		1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
+		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
 		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
 		DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950162A017F6800FF8715 /* HomeVC.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
 		1E41D8DA2A02FFDC00F73F1C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		1E41D8DB2A02FFDC00F73F1C /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		1E41D8DC2A02FFDC00F73F1C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE6950142A017F6800FF8715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +157,12 @@
 				1E41D8D92A02FFDC00F73F1C /* Roboto */,
 			);
 			path = Fonts;
+		DE3A7DA52A01C9C600EC6982 /* AuthenticationScreens */ = {
+			isa = PBXGroup;
+			children = (
+				DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */,
+			);
+			path = AuthenticationScreens;
 			sourceTree = "<group>";
 		};
 		DE6950062A017F6800FF8715 = {
@@ -229,7 +238,7 @@
 		DE6950472A0189A900FF8715 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE8BF4922A041CB8008519B5 /* AuthenticationScreens */,
+				DE3A7DA52A01C9C600EC6982 /* AuthenticationScreens */,
 				DE69504D2A018A3100FF8715 /* HomeScreen */,
 				DE69504C2A018A2800FF8715 /* LaunchScreen */,
 			);
@@ -453,6 +462,7 @@
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
 				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
+				DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */,
 				DE6950572A018AD000FF8715 /* ViewModel.swift in Sources */,
 				DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */,
 			);
