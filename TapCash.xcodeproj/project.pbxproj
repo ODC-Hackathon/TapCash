@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E41D8D82A02FA9300F73F1C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E41D8D72A02FA9300F73F1C /* IQKeyboardManagerSwift */; };
+		1E41D8E72A02FFDC00F73F1C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DA2A02FFDC00F73F1C /* Roboto-Medium.ttf */; };
+		1E41D8E82A02FFDC00F73F1C /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DB2A02FFDC00F73F1C /* Roboto-Light.ttf */; };
+		1E41D8E92A02FFDC00F73F1C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DC2A02FFDC00F73F1C /* Roboto-Regular.ttf */; };
+		1E41D8EA2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DD2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf */; };
+		1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DE2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf */; };
+		1E41D8EC2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8DF2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf */; };
+		1E41D8ED2A02FFDC00F73F1C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E02A02FFDC00F73F1C /* Roboto-LightItalic.ttf */; };
+		1E41D8EE2A02FFDC00F73F1C /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E12A02FFDC00F73F1C /* Roboto-Italic.ttf */; };
+		1E41D8EF2A02FFDC00F73F1C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E22A02FFDC00F73F1C /* LICENSE.txt */; };
+		1E41D8F02A02FFDC00F73F1C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E32A02FFDC00F73F1C /* Roboto-BlackItalic.ttf */; };
+		1E41D8F12A02FFDC00F73F1C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */; };
+		1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */; };
+		1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */; };
+		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
 		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
 		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
@@ -48,6 +63,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E41D8DA2A02FFDC00F73F1C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		1E41D8DB2A02FFDC00F73F1C /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		1E41D8DC2A02FFDC00F73F1C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		1E41D8DD2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1E41D8DE2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		1E41D8DF2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1E41D8E02A02FFDC00F73F1C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		1E41D8E12A02FFDC00F73F1C /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		1E41D8E22A02FFDC00F73F1C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1E41D8E32A02FFDC00F73F1C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E41D8D82A02FA9300F73F1C /* IQKeyboardManagerSwift in Frameworks */,
 				DE6950642A018EA500FF8715 /* OrderedCollections in Frameworks */,
 				DE6950602A018EA500FF8715 /* Collections in Frameworks */,
 				DE6950622A018EA500FF8715 /* DequeModule in Frameworks */,
@@ -100,9 +130,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E41D8D92A02FFDC00F73F1C /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				1E41D8DA2A02FFDC00F73F1C /* Roboto-Medium.ttf */,
+				1E41D8DB2A02FFDC00F73F1C /* Roboto-Light.ttf */,
+				1E41D8DC2A02FFDC00F73F1C /* Roboto-Regular.ttf */,
+				1E41D8DD2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf */,
+				1E41D8DE2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf */,
+				1E41D8DF2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf */,
+				1E41D8E02A02FFDC00F73F1C /* Roboto-LightItalic.ttf */,
+				1E41D8E12A02FFDC00F73F1C /* Roboto-Italic.ttf */,
+				1E41D8E22A02FFDC00F73F1C /* LICENSE.txt */,
+				1E41D8E32A02FFDC00F73F1C /* Roboto-BlackItalic.ttf */,
+				1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */,
+				1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */,
+				1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		1E41D8F42A03042000F73F1C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1E41D8D92A02FFDC00F73F1C /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DE3A7DA52A01C9C600EC6982 /* AuthenticationScreens */ = {
 			isa = PBXGroup;
 			children = (
+				1EDE86112A01BB1200B9C156 /* LoginVC.swift */,
 				DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */,
 			);
 			path = AuthenticationScreens;
@@ -131,6 +190,7 @@
 		DE6950112A017F6800FF8715 /* TapCash */ = {
 			isa = PBXGroup;
 			children = (
+				1E41D8F42A03042000F73F1C /* Fonts */,
 				DE6950452A01899600FF8715 /* Assets */,
 				DE6950462A0189A000FF8715 /* Delegates */,
 				DE6950492A0189B800FF8715 /* Models */,
@@ -252,6 +312,7 @@
 				DE6950612A018EA500FF8715 /* DequeModule */,
 				DE6950632A018EA500FF8715 /* OrderedCollections */,
 				DE6950662A0190E500FF8715 /* Lottie */,
+				1E41D8D72A02FA9300F73F1C /* IQKeyboardManagerSwift */,
 			);
 			productName = TapCash;
 			productReference = DE69500F2A017F6800FF8715 /* TapCash.app */;
@@ -330,6 +391,7 @@
 				DE69505B2A018C3B00FF8715 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */,
 				DE6950652A0190E500FF8715 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				1E41D8D62A02FA9300F73F1C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = DE6950102A017F6800FF8715 /* Products */;
 			projectDirPath = "";
@@ -347,8 +409,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E41D8F12A02FFDC00F73F1C /* Roboto-Bold.ttf in Resources */,
+				1E41D8EF2A02FFDC00F73F1C /* LICENSE.txt in Resources */,
+				1E41D8EC2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf in Resources */,
+				1E41D8E92A02FFDC00F73F1C /* Roboto-Regular.ttf in Resources */,
+				1E41D8ED2A02FFDC00F73F1C /* Roboto-LightItalic.ttf in Resources */,
+				1E41D8E72A02FFDC00F73F1C /* Roboto-Medium.ttf in Resources */,
 				DE6950222A017F6A00FF8715 /* LaunchScreen.storyboard in Resources */,
+				1E41D8F02A02FFDC00F73F1C /* Roboto-BlackItalic.ttf in Resources */,
+				1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */,
+				1E41D8E82A02FFDC00F73F1C /* Roboto-Light.ttf in Resources */,
+				1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */,
+				1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */,
+				1E41D8EA2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf in Resources */,
 				DE69501F2A017F6A00FF8715 /* Assets.xcassets in Resources */,
+				1E41D8EE2A02FFDC00F73F1C /* Roboto-Italic.ttf in Resources */,
 				DE69501A2A017F6800FF8715 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +451,7 @@
 			files = (
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
+				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
@@ -726,6 +802,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1E41D8D62A02FA9300F73F1C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
 		DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -761,6 +845,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1E41D8D72A02FA9300F73F1C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E41D8D62A02FA9300F73F1C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		DE6950592A018C1C00FF8715 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */;
