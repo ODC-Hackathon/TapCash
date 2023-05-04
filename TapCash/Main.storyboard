@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="67i-pv-cCP">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wJv-hS-dJF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="67i-pv-cCP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ITZ-K1-U7Q">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="tintColor" name="BackgroundColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="SecondaryColor"/>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <color key="selectionIndicatorTintColor" name="ThirdColor"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="X9A-VY-SUs" kind="relationship" relationship="viewControllers" id="V0n-S9-19L"/>
+                        <segue destination="3ja-OL-pSX" kind="relationship" relationship="viewControllers" id="EZq-uI-fd8"/>
+                        <segue destination="WtY-s8-k6d" kind="relationship" relationship="viewControllers" id="cGm-nC-Kl5"/>
+                        <segue destination="5gc-cP-E49" kind="relationship" relationship="viewControllers" id="ovd-2J-233"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zh-4M-e8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+        <!--HomeSB-->
+        <scene sceneID="gvA-uP-VvM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeSB" id="X9A-VY-SUs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Dgr-Eh-PdG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1C-p4-5aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-256"/>
+        </scene>
+        <!--OperationsSB-->
+        <scene sceneID="rfF-Hb-iMa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OperationsSB" id="3ja-OL-pSX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WTd-Gf-8w4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Io-ey-1pf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="-27"/>
+        </scene>
+        <!--DashboardSB-->
+        <scene sceneID="fSg-Bw-UWu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DashboardSB" id="WtY-s8-k6d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="mFP-rh-cnv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1it-KD-fDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="104"/>
+        </scene>
+        <!--ProfileSB-->
+        <scene sceneID="FCD-yK-ZKd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProfileSB" id="5gc-cP-E49" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="s1l-cT-nd8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3o4-zY-pE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0039215688593685627" green="0.18823529779911041" blue="0.40392160415649414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundColor">
+            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="1" green="0.79607843137254897" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThirdColor">
+            <color red="0.44699999690055847" green="0.62400001287460327" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
