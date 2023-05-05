@@ -54,6 +54,7 @@
 		DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */; };
 		DE7482052A04337C0090F5EC /* DashboardSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482042A04337C0090F5EC /* DashboardSB.storyboard */; };
 		DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7482062A0434740090F5EC /* DashboardVC.swift */; };
+		DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
 		DE7482042A04337C0090F5EC /* DashboardSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
 		DE7482062A0434740090F5EC /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				DE6950182A017F6800FF8715 /* AuthenticationSB.storyboard */,
 				1EDE86112A01BB1200B9C156 /* LoginVC.swift */,
 				DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */,
+				DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */,
 			);
 			path = AuthenticationScreens;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7481ED2A0429EE0090F5EC /* Cells */,
+				DE92E6D12A05AB2D00E25491 /* CustomViews */,
 				DE7482032A04335B0090F5EC /* DashboardScreens */,
 				DE7481F82A042B690090F5EC /* OperationsScreens */,
 				DE7481F72A042B590090F5EC /* ProfileScreens */,
@@ -360,6 +364,13 @@
 				DE7482062A0434740090F5EC /* DashboardVC.swift */,
 			);
 			path = DashboardScreens;
+			sourceTree = "<group>";
+		};
+		DE92E6D12A05AB2D00E25491 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +550,7 @@
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
 				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
 				DE7481FC2A042B9A0090F5EC /* ProfileVC.swift in Sources */,
+				DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */,
 				DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */,
 				DE7481F12A042A230090F5EC /* CategoryCVCell.swift in Sources */,
 				DE6950572A018AD000FF8715 /* ViewModel.swift in Sources */,
