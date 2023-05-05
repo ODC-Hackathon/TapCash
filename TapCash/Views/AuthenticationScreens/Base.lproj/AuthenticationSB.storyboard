@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10M-4h-wZh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2rL-cc-Xhl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -145,7 +145,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Ni-np2">
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Ni-np2">
                                 <rect key="frame" x="138.66666666666666" y="576" width="115.66666666666666" height="26"/>
                                 <color key="pageIndicatorTintColor" name="ThirdColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
@@ -163,6 +163,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="registerBtn:" destination="FJ5-5O-m1l" eventType="touchUpInside" id="8VY-rr-g8A"/>
@@ -413,6 +414,237 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNg-Y1-WWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-924.4274809160305" y="-980.28169014084517"/>
+        </scene>
+        <!--Pass CodeVC-->
+        <scene sceneID="tXe-a2-OFN">
+            <objects>
+                <viewController id="2rL-cc-Xhl" customClass="PassCodeVC" customModule="TapCash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZa-Sp-TkY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Passcode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdO-wP-kdG">
+                                <rect key="frame" x="86.666666666666686" y="103" width="220" height="37.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="ThirdColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="d2z-Rt-bXZ">
+                                <rect key="frame" x="32" y="204.33333333333334" width="329" height="332.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="wSD-Uu-M4O">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8Q-gf-fdT">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="Q3X-3Z-cU7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypj-Im-pMN">
+                                                <rect key="frame" x="125" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="tM9-Bh-EX5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtM-tZ-6Gf">
+                                                <rect key="frame" x="250" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="TQL-0i-4is"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="7mt-U0-uoq">
+                                        <rect key="frame" x="0.0" y="86.999999999999972" width="329" height="71.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXD-s9-DAi">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="yfu-jm-Afn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAj-sX-CxM">
+                                                <rect key="frame" x="125" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="c4y-95-25I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nY-K9-Wdr">
+                                                <rect key="frame" x="250" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="lIl-YC-S5C"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="8Jy-Jr-B8C">
+                                        <rect key="frame" x="0.0" y="173.66666666666666" width="329" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYE-Zq-se9">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="x4J-SY-BKN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-eg-DYN">
+                                                <rect key="frame" x="125" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="8gY-Sw-L0X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbg-3h-Eqs">
+                                                <rect key="frame" x="250" y="0.0" width="79" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="qwc-cX-BL7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="ugT-lh-eag">
+                                        <rect key="frame" x="0.0" y="260.66666666666663" width="329" height="71.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUb-mQ-lXK">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="C" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" name="BackgroundColor"/>
+                                                    <color key="baseBackgroundColor" name="ThirdColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clearBtn:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="1WX-D5-xeN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEz-3R-knQ">
+                                                <rect key="frame" x="125" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="0" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numsBtns:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="s9s-3v-zZM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-xo-m1s">
+                                                <rect key="frame" x="250" y="0.0" width="79" height="71.666666666666671"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="X" cornerStyle="capsule">
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" name="BackgroundColor"/>
+                                                    <color key="baseBackgroundColor" name="ThirdColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteBtn:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="aRa-b5-7cJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ugT-lh-eag" firstAttribute="height" secondItem="wSD-Uu-M4O" secondAttribute="height" id="LHT-ef-B20"/>
+                                    <constraint firstItem="8Jy-Jr-B8C" firstAttribute="height" secondItem="wSD-Uu-M4O" secondAttribute="height" id="Q6a-Bo-0nC"/>
+                                    <constraint firstItem="7mt-U0-uoq" firstAttribute="height" secondItem="wSD-Uu-M4O" secondAttribute="height" id="dpL-ch-puY"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8u-PT-WmR">
+                                <rect key="frame" x="32" y="552.66666666666663" width="329" height="46"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBtn:" destination="2rL-cc-Xhl" eventType="touchUpInside" id="Prl-04-qw3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4 PIN" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-h4-uTC">
+                                <rect key="frame" x="32" y="156.33333333333334" width="329" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES" textContentType="one-time-code"/>
+                            </textField>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZwF-Ut-R60">
+                                <rect key="frame" x="138.66666666666666" y="616.66666666666663" width="115.66666666666666" height="26"/>
+                                <color key="pageIndicatorTintColor" name="ThirdColor"/>
+                                <color key="currentPageIndicatorTintColor" name="AccentColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T2L-15-Hvt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P8u-PT-WmR" firstAttribute="height" secondItem="eZa-Sp-TkY" secondAttribute="height" multiplier="0.0539906" id="7Rw-t4-4fl"/>
+                            <constraint firstItem="d2z-Rt-bXZ" firstAttribute="height" secondItem="eZa-Sp-TkY" secondAttribute="height" multiplier="0.390063" id="8uf-F2-pyB"/>
+                            <constraint firstItem="ZwF-Ut-R60" firstAttribute="top" secondItem="P8u-PT-WmR" secondAttribute="bottom" constant="18" id="9Fe-OX-66h"/>
+                            <constraint firstItem="3ot-h4-uTC" firstAttribute="leading" secondItem="T2L-15-Hvt" secondAttribute="leading" constant="32" id="Ahv-36-ixo"/>
+                            <constraint firstItem="d2z-Rt-bXZ" firstAttribute="top" secondItem="MdO-wP-kdG" secondAttribute="bottom" constant="64" id="CSC-0z-Nxc"/>
+                            <constraint firstItem="P8u-PT-WmR" firstAttribute="leading" secondItem="T2L-15-Hvt" secondAttribute="leading" constant="32" id="Cm8-Dw-OoX"/>
+                            <constraint firstItem="d2z-Rt-bXZ" firstAttribute="leading" secondItem="T2L-15-Hvt" secondAttribute="leading" constant="32" id="DZ1-X4-urp"/>
+                            <constraint firstItem="3ot-h4-uTC" firstAttribute="top" secondItem="MdO-wP-kdG" secondAttribute="bottom" constant="16" id="OBZ-aw-64Y"/>
+                            <constraint firstItem="P8u-PT-WmR" firstAttribute="top" secondItem="d2z-Rt-bXZ" secondAttribute="bottom" constant="16" id="PWi-iv-ekS"/>
+                            <constraint firstItem="MdO-wP-kdG" firstAttribute="centerX" secondItem="eZa-Sp-TkY" secondAttribute="centerX" id="Rnw-ce-uQD"/>
+                            <constraint firstItem="3ot-h4-uTC" firstAttribute="height" secondItem="eZa-Sp-TkY" secondAttribute="height" multiplier="0.0469484" id="cdQ-x7-aoh"/>
+                            <constraint firstItem="T2L-15-Hvt" firstAttribute="trailing" secondItem="3ot-h4-uTC" secondAttribute="trailing" constant="32" id="eFr-iv-eUs"/>
+                            <constraint firstItem="ZwF-Ut-R60" firstAttribute="centerX" secondItem="eZa-Sp-TkY" secondAttribute="centerX" id="j8f-sr-yoy"/>
+                            <constraint firstItem="T2L-15-Hvt" firstAttribute="trailing" secondItem="d2z-Rt-bXZ" secondAttribute="trailing" constant="32" id="mmP-2o-PZw"/>
+                            <constraint firstItem="MdO-wP-kdG" firstAttribute="top" secondItem="T2L-15-Hvt" secondAttribute="top" constant="44" id="rmn-Fq-jqf"/>
+                            <constraint firstItem="T2L-15-Hvt" firstAttribute="trailing" secondItem="P8u-PT-WmR" secondAttribute="trailing" constant="32" id="tuY-hk-h38"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="ZwF-Ut-R60" id="bZf-Ix-wsZ"/>
+                        <outlet property="pinTxtField" destination="3ot-h4-uTC" id="iqn-KM-V3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKL-Vc-wra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.61832061068702" y="-980.28169014084517"/>
         </scene>
     </scenes>
     <resources>
