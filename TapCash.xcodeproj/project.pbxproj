@@ -21,6 +21,8 @@
 		1E41D8F12A02FFDC00F73F1C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */; };
 		1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */; };
 		1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */; };
+		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
+		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
 		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
@@ -88,6 +90,8 @@
 		1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
+		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +184,15 @@
 				1E41D8D92A02FFDC00F73F1C /* Roboto */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1E858A122A058EB700B256DC /* TransitionCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E858A132A058F1300B256DC /* TransitionTVCell.swift */,
+				1E858A142A058F1300B256DC /* TransitionTVCell.xib */,
+			);
+			path = TransitionCell;
 			sourceTree = "<group>";
 		};
 		DE3A7DA52A01C9C600EC6982 /* AuthenticationScreens */ = {
@@ -323,6 +336,7 @@
 		DE7481ED2A0429EE0090F5EC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1E858A122A058EB700B256DC /* TransitionCell */,
 				DE7481EE2A0429F80090F5EC /* CategoriesCell */,
 			);
 			path = Cells;
@@ -501,6 +515,7 @@
 				DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */,
 				1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */,
 				1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */,
+				1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */,
 				DE7481F62A042B460090F5EC /* HomeSB.storyboard in Resources */,
 				1E41D8EA2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf in Resources */,
 				DE69501F2A017F6A00FF8715 /* Assets.xcassets in Resources */,
@@ -536,6 +551,7 @@
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
+				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
@@ -723,7 +739,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TapCash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -751,7 +767,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7Y6WH6SYK8;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TapCash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
