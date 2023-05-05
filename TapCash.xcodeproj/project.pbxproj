@@ -54,6 +54,7 @@
 		DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */; };
 		DE7482052A04337C0090F5EC /* DashboardSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482042A04337C0090F5EC /* DashboardSB.storyboard */; };
 		DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7482062A0434740090F5EC /* DashboardVC.swift */; };
+		DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA76C062A049541002F6F95 /* PassCodeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
 		DE7482042A04337C0090F5EC /* DashboardSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
 		DE7482062A0434740090F5EC /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		DEA76C062A049541002F6F95 /* PassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				DE6950182A017F6800FF8715 /* AuthenticationSB.storyboard */,
 				1EDE86112A01BB1200B9C156 /* LoginVC.swift */,
 				DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */,
+				DEA76C062A049541002F6F95 /* PassCodeVC.swift */,
 			);
 			path = AuthenticationScreens;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
+				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
