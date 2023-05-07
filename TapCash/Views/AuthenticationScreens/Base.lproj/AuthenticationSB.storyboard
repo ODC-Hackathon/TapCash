@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FJ5-5O-m1l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1G2-Ge-90Z">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -64,7 +64,7 @@
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iwE-W2-bV9">
-                                                <rect key="frame" x="0.0" y="28.666666666666657" width="329" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.666666666666686" width="329" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="new-password"/>
@@ -89,7 +89,7 @@
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iFP-3r-fpt">
-                                                <rect key="frame" x="0.0" y="28.666666666666629" width="329" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.666666666666686" width="329" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
@@ -114,7 +114,7 @@
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="m8b-Bj-Xwe">
-                                                <rect key="frame" x="0.0" y="28.666666666666629" width="329" height="34"/>
+                                                <rect key="frame" x="0.0" y="28.666666666666686" width="329" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -243,6 +243,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Hj-39-7ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-257.25190839694653" y="-980.28169014084517"/>
+        </scene>
+        <!--ProfilesVC-->
+        <scene sceneID="XNg-YN-KmZ">
+            <objects>
+                <viewController id="1G2-Ge-90Z" customClass="ProfilesVC" customModule="TapCash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="isE-R6-IiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjU-J5-4LG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="213"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EiB-gY-F98">
+                                <rect key="frame" x="16" y="278" width="361" height="476"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="spS-i8-Wka">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="50" maxX="0.0" maxY="50"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose ur profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZJ-yH-fkd">
+                                <rect key="frame" x="16" y="229" width="198" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XGp-XD-Sjy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EiB-gY-F98" firstAttribute="top" secondItem="uZJ-yH-fkd" secondAttribute="bottom" constant="16" id="6ZP-bm-t92"/>
+                            <constraint firstItem="uZJ-yH-fkd" firstAttribute="top" secondItem="YjU-J5-4LG" secondAttribute="bottom" constant="16" id="CzJ-Ec-mee"/>
+                            <constraint firstItem="YjU-J5-4LG" firstAttribute="trailing" secondItem="XGp-XD-Sjy" secondAttribute="trailing" id="IAC-y3-b2N"/>
+                            <constraint firstItem="XGp-XD-Sjy" firstAttribute="bottom" secondItem="EiB-gY-F98" secondAttribute="bottom" constant="64" id="P15-nx-Qw8"/>
+                            <constraint firstItem="YjU-J5-4LG" firstAttribute="leading" secondItem="XGp-XD-Sjy" secondAttribute="leading" id="S4Z-VY-A6F"/>
+                            <constraint firstItem="EiB-gY-F98" firstAttribute="leading" secondItem="XGp-XD-Sjy" secondAttribute="leading" constant="16" id="ZhK-ug-o8n"/>
+                            <constraint firstItem="uZJ-yH-fkd" firstAttribute="leading" secondItem="XGp-XD-Sjy" secondAttribute="leading" constant="16" id="aai-ZZ-oVb"/>
+                            <constraint firstItem="YjU-J5-4LG" firstAttribute="height" secondItem="isE-R6-IiJ" secondAttribute="height" multiplier="0.25" id="hzJ-Xs-0CF"/>
+                            <constraint firstItem="YjU-J5-4LG" firstAttribute="top" secondItem="isE-R6-IiJ" secondAttribute="top" id="j6Q-yL-oda"/>
+                            <constraint firstItem="XGp-XD-Sjy" firstAttribute="trailing" secondItem="EiB-gY-F98" secondAttribute="trailing" constant="16" id="tsp-V9-w2P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profilesCollectionView" destination="EiB-gY-F98" id="aTB-mh-RDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdj-nU-9xz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257.25190839694653" y="-252.81690140845072"/>
         </scene>
         <!--Face RecognitionVC-->
         <scene sceneID="XYz-dg-JJP">
