@@ -7,11 +7,21 @@
 
 import UIKit
 
-class ProfileVC: UIViewController{
+class ProfileVC: UIViewController, ProfileTVControllerDelegate{
+    func showPassAlert() {
+        //Will be replaced with an alert containing textfield to check pincode
+        showAlert(title: "Done", msg: "Selected", handler: { _ in })
+    }
+    
 
+    @IBOutlet weak var ppImage: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    var tvController: ProfileTVController?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tvController = self.children[0] as? ProfileTVController
+        tvController?.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +36,15 @@ class ProfileVC: UIViewController{
     }
     */
 
+}
+extension ProfileVC {
+    func showAlert(title: String, msg: String, handler: @escaping (UIAlertAction?) -> Void) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+            handler(action)
+        }))
+
+        present(alert, animated: true, completion: nil)
+    }
 }
