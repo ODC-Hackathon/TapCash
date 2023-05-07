@@ -20,13 +20,14 @@ class FamilyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rightBtn = UIBarButtonItem(image: UIImage.add, style: .plain, target: self, action: #selector(printOne) )
+        let rightBtn = UIBarButtonItem(image: UIImage.add, style: .plain, target: self, action: #selector(gotToMemberDetails) )
         navigationItem.rightBarButtonItem = rightBtn
         // Do any additional setup after loading the view.
     }
 
-    @objc func printOne(){
-        print("Onee")
+    @objc func gotToMemberDetails(){
+        let mmbrVC = self.storyboard?.instantiateViewController(withIdentifier: "addMemberVC") as! MemberDetailsVC
+        navigationController?.pushViewController(mmbrVC, animated: true)
     }
     /*
      // MARK: - Navigation

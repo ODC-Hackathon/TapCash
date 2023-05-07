@@ -63,7 +63,7 @@
 		DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */; };
 		DEF96EC22A07EB9A001AAF69 /* FamilyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */; };
 		DEF96EC42A080D60001AAF69 /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EC32A080D60001AAF69 /* ProfileTVController.swift */; };
-		DEF96EC62A08324B001AAF69 /* AddMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EC52A08324B001AAF69 /* AddMemberVC.swift */; };
+		DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,7 @@
 		DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTVCell.swift; sourceTree = "<group>"; };
 		DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilyTVCell.xib; sourceTree = "<group>"; };
 		DEF96EC32A080D60001AAF69 /* ProfileTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVController.swift; sourceTree = "<group>"; };
-		DEF96EC52A08324B001AAF69 /* AddMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberVC.swift; sourceTree = "<group>"; };
+		DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,7 +375,7 @@
 				DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */,
 				DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */,
 				DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */,
-				DEF96EC52A08324B001AAF69 /* AddMemberVC.swift */,
+				DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */,
 			);
 			path = ProfileScreens;
 			sourceTree = "<group>";
@@ -590,7 +590,7 @@
 				DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
-				DEF96EC62A08324B001AAF69 /* AddMemberVC.swift in Sources */,
+				DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
