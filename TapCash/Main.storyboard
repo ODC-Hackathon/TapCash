@@ -12,15 +12,22 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="67i-pv-cCP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ITZ-K1-U7Q">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ITZ-K1-U7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <color key="tintColor" name="BackgroundColor"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="ThirdColor"/>
                         <color key="selectedImageTintColor" name="SecondaryColor"/>
-                        <tabBarAppearance key="scrollEdgeAppearance">
+                        <tabBarAppearance key="standardAppearance">
                             <color key="backgroundColor" name="AccentColor"/>
-                            <color key="selectionIndicatorTintColor" name="ThirdColor"/>
+                            <color key="shadowColor" name="AccentColor"/>
+                            <color key="selectionIndicatorTintColor" name="SecondaryColor"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="regular">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <color key="shadowColor" name="AccentColor"/>
+                            <color key="selectionIndicatorTintColor" name="SecondaryColor"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
