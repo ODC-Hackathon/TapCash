@@ -24,6 +24,9 @@
 		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
 		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
+		DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */; };
+		DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */; };
+		DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */; };
 		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
 		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
@@ -94,6 +97,9 @@
 		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
 		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
+		DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesCVCell.swift; sourceTree = "<group>"; };
+		DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilesCVCell.xib; sourceTree = "<group>"; };
+		DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesVC.swift; sourceTree = "<group>"; };
 		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +203,15 @@
 			path = TransitionCell;
 			sourceTree = "<group>";
 		};
+		DE1E6B422A07878A006241D9 /* ProfilesCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */,
+				DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */,
+			);
+			path = ProfilesCell;
+			sourceTree = "<group>";
+		};
 		DE3A7DA52A01C9C600EC6982 /* AuthenticationScreens */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +220,7 @@
 				DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */,
 				DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */,
 				DEA76C062A049541002F6F95 /* PassCodeVC.swift */,
+				DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */,
 			);
 			path = AuthenticationScreens;
 			sourceTree = "<group>";
@@ -340,6 +356,7 @@
 		DE7481ED2A0429EE0090F5EC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DE1E6B422A07878A006241D9 /* ProfilesCell */,
 				1E858A122A058EB700B256DC /* TransitionCell */,
 				DE7481EE2A0429F80090F5EC /* CategoriesCell */,
 			);
@@ -526,6 +543,7 @@
 				DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */,
 				1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */,
 				1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */,
+				DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */,
 				1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */,
 				DE7481F62A042B460090F5EC /* HomeSB.storyboard in Resources */,
 				1E41D8EA2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf in Resources */,
@@ -557,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */,
 				DE7482002A042C580090F5EC /* RequestVC.swift in Sources */,
 				DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
@@ -564,6 +583,7 @@
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
+				DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
