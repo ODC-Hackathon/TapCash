@@ -15,6 +15,7 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
             self.registerBtn.layer.cornerRadius = 20
         }
     }
+    @IBOutlet weak var userNameTxtField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -26,7 +27,7 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        renderTextFields(txtFields: [emailTextField,phoneTextField,nameTextField,passwordTextField])
+        renderTextFields(txtFields: [emailTextField,phoneTextField,nameTextField,passwordTextField,userNameTxtField])
     }
 
     @IBAction func registerBtn(_ sender: UIButton) {
