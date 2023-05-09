@@ -15,10 +15,10 @@ class LoginVC: UIViewController {
             loginButton.layer.cornerRadius = 10
         }
     }
-
+    var userMV : UserOperations?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userMV = UserOperations()
         // Do any additional setup after loading the view.
     }
 
@@ -27,8 +27,41 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: UIButton) {
+        let email = emailText.text ?? ""
+               let password = passwordText.text ?? ""
+               
+               let body : [String : Any] = [
+                   "email":email,
+                   "password":password,
+                   "type":"user"
+               ]
+               
+               userMV?.postCustomer(url: "http://127.0.0.1:8000/api/profiles", data: body, complition: { _ in
+               })
+               userMV?.bindingLogInData = {
+                   print(self.userMV?.usersResult.data?[0].user?.family?.count ?? 0)
+                   print(self.userMV?.usersResult.token ?? "")
+                   if self.userMV?.usersResult.token != nil{
+                       DispatchQueue.main.async {
+                           let profileScreen = self.storyboard?.instantiateViewController(withIdentifier: "profiles") as! ProfilesVC
+                           var masterUser = Family()
+                           masterUser.name = self.userMV?.usersResult.data?[0].user?.name
+                           masterUser.sponsorId = self.userMV?.usersResult.data?[0].user?.id
+                           masterUser.userName = self.userMV?.usersResult.data?[0].user?.userName
+                           profileScreen.profiles.append(masterUser)
+                           for user in self.userMV?.usersResult.data?[0].user?.family ?? []
+                           {
+                               profileScreen.profiles.append(user)
+                               
+                           }
+                           self.navigationController?.pushViewController(profileScreen, animated: true)
+                                       }
+                       }
+               }
+           }
     }
-}
+
+
 
 extension LoginVC {
     func renderTextField(textFields: [UITextField]) {
