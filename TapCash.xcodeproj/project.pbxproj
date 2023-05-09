@@ -49,6 +49,8 @@
 		DE6950622A018EA500FF8715 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950612A018EA500FF8715 /* DequeModule */; };
 		DE6950642A018EA500FF8715 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950632A018EA500FF8715 /* OrderedCollections */; };
 		DE6950672A0190E500FF8715 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950662A0190E500FF8715 /* Lottie */; };
+		DE745A992A0A13F800CDEF42 /* RegisterTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */; };
+		DE745A9B2A0A26D500CDEF42 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */; };
 		DE7481F12A042A230090F5EC /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481EF2A042A230090F5EC /* CategoryCVCell.swift */; };
 		DE7481F22A042A230090F5EC /* CategoryCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F02A042A230090F5EC /* CategoryCVCell.xib */; };
 		DE7481F42A042A3C0090F5EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F32A042A3C0090F5EC /* Main.storyboard */; };
@@ -121,6 +123,8 @@
 		DE6950522A018AAF00FF8715 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DE6950542A018ABE00FF8715 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		DE6950562A018AD000FF8715 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTVController.swift; sourceTree = "<group>"; };
+		DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		DE7481EF2A042A230090F5EC /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
 		DE7481F02A042A230090F5EC /* CategoryCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVCell.xib; sourceTree = "<group>"; };
 		DE7481F32A042A3C0090F5EC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -300,8 +304,8 @@
 		DE6950472A0189A900FF8715 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DE745A972A0A13E300CDEF42 /* CustomViews */,
 				DE7481ED2A0429EE0090F5EC /* Cells */,
-				DE92E6D12A05AB2D00E25491 /* CustomViews */,
 				DE7482032A04335B0090F5EC /* DashboardScreens */,
 				DE7481F82A042B690090F5EC /* OperationsScreens */,
 				DE7481F72A042B590090F5EC /* ProfileScreens */,
@@ -325,6 +329,7 @@
 			children = (
 				DE69504A2A0189C700FF8715 /* NetworkServices */,
 				DE6950502A018A8C00FF8715 /* User.swift */,
+				DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,6 +358,14 @@
 				DE7481F52A042B460090F5EC /* HomeSB.storyboard */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DE745A972A0A13E300CDEF42 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		DE7481ED2A0429EE0090F5EC /* Cells */ = {
@@ -401,13 +414,6 @@
 				DE7482062A0434740090F5EC /* DashboardVC.swift */,
 			);
 			path = DashboardScreens;
-			sourceTree = "<group>";
-		};
-		DE92E6D12A05AB2D00E25491 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,8 +596,10 @@
 				DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
+				DE745A9B2A0A26D500CDEF42 /* Endpoints.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
+				DE745A992A0A13F800CDEF42 /* RegisterTVController.swift in Sources */,
 				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
 				DE7481FC2A042B9A0090F5EC /* ProfileVC.swift in Sources */,
 				DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */,

@@ -43,12 +43,12 @@ class LoginVC: UIViewController {
             self.present(alert, animated: true)
         }
         else{
-            userMV?.postCustomer(url: "http://127.0.0.1:8000/api/profiles", data: body, complition: { _ in
+            userMV?.postCustomer(url: .login, data: body, complition: { _ in
             })
             userMV?.bindingLogInData = {
                 print(self.userMV?.usersResult.data?[0].user?.family?.count ?? 0)
-                print(self.userMV?.usersResult.token ?? "")
-                if self.userMV?.usersResult.token != nil{
+                print(self.userMV?.usersResult.data?[0].token ?? "")
+                if self.userMV?.usersResult.data?[0].token != nil{
                     DispatchQueue.main.async {
                         let profileScreen = self.storyboard?.instantiateViewController(withIdentifier: "profiles") as! ProfilesVC
                         var masterUser = Family()
