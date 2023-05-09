@@ -48,7 +48,7 @@ class RegisterVC: UIViewController {
                 "phone_number": phone ?? "",
                 "email": email ?? "",
                 "password": password ?? "",
-                "pincode": pinCode ?? 000 
+                "pincode": pinCode ?? 0
             ]
             userVM?.addCustomer(url: .register, parameters: body)
             userVM?.bindingLogInData = {
@@ -61,8 +61,7 @@ class RegisterVC: UIViewController {
                     case "data":
                         self.indicator.stopAnimating()
                         self.showAlert(title: "Done", msg: "Registered Successfully", handler: { _ in
-                            let main = UIStoryboard(name: "HomeSB", bundle: nil).instantiateViewController(withIdentifier: "homeVC") as? HomeVC
-                            
+                            self.performSegue(withIdentifier: "goToHome", sender: self)
                         })
 
                     case "errors":

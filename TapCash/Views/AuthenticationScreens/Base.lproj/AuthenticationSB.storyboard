@@ -9,6 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="lcv-NE-WbF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="ahv-CF-10n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42V-7v-H7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="-1403"/>
+        </scene>
         <!--RegisterVC-->
         <scene sceneID="Gwx-dD-6N9">
             <objects>
@@ -110,6 +118,7 @@
                     </view>
                     <connections>
                         <outlet property="registerBtn" destination="PyO-6i-u0F" id="yI9-K6-avM"/>
+                        <segue destination="ahv-CF-10n" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="c4c-TO-5r8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Hj-39-7ky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -363,7 +372,7 @@
                                                             <rect key="frame" x="0.0" y="36.666666666666657" width="337" height="35.333333333333343"/>
                                                             <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                            <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                                                            <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
