@@ -15,10 +15,15 @@ class UserOperations{
             bindingLogInData()
         }
     }
-    func postCustomer (url : String,  data : [String : Any],complition :  @escaping (Result<Data, Error>) -> Void)
+    var userResponse:[String:Any]?{
+        didSet{
+            bindingLogInData()
+        }
+    }
+    func postCustomer (url : Endpoints,  data : [String : Any],complition :  @escaping (Result<Data, Error>) -> Void)
     {
-        NetworkServices.postMethod(url: url, parameters: data, token: nil) { data in
-            print(data)
+        NetworkServices.postMethod(url: url.path, parameters: data, token: nil) { data in
+            print(data as Any)
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: data, options: [])
                 if let jsonString = String(data: jsonData, encoding: .utf8) {
@@ -41,4 +46,9 @@ class UserOperations{
         }
     }
     
+    func addCustomer(url: Endpoints, parameters : [String:Any]) {
+        NetworkServices.postMethod(url: url.path, parameters: parameters, token: nil) { response in
+            self.userResponse = response
+        }
+    }
 }

@@ -10,11 +10,11 @@ import Foundation
 // MARK: - Users
 struct Users : Codable{
     let data: [Datum]?
-    let token: String?
 }
 
 // MARK: - Datum
 struct Datum : Codable{
+    let token: String?
     var userId: Int?
     var email: String?
     var user: User?
