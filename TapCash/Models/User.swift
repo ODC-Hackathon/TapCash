@@ -8,27 +8,27 @@
 import Foundation
 
 // MARK: - Users
-struct Users {
-    let data: [Datum]
-    let token: String
+struct Users : Codable{
+    let data: [Datum]?
+    let token: String?
 }
 
 // MARK: - Datum
-struct Datum {
-    let userId: Int
-    let email: String
-    let user: User
+struct Datum : Codable{
+    var userId: Int?
+    var email: String?
+    var user: User?
 }
 
 // MARK: - User
-struct User {
-    let id: Int
-    let name, userName: String
-    let family: [Family]
+struct User : Codable{
+    let id: Int?
+    let name, userName: String?
+    let family: [Family]?
 }
 
 // MARK: - Family
-struct Family {
-    let userName, name: String
-    let sponsorId: Int
+struct Family : Codable{
+    var userName, name: String?
+    var sponsorId: Int?
 }

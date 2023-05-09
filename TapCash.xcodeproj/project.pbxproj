@@ -21,6 +21,7 @@
 		1E41D8F12A02FFDC00F73F1C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */; };
 		1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */; };
 		1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */; };
+		1E7B57602A09D77600C69A01 /* OperationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B575E2A09D77600C69A01 /* OperationsVC.swift */; };
 		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
 		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
@@ -54,11 +55,11 @@
 		DE7481F62A042B460090F5EC /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F52A042B460090F5EC /* HomeSB.storyboard */; };
 		DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481F92A042B8A0090F5EC /* SendVC.swift */; };
 		DE7481FC2A042B9A0090F5EC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481FB2A042B9A0090F5EC /* ProfileVC.swift */; };
-		DE7481FE2A042C160090F5EC /* OperationsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7481FD2A042C160090F5EC /* OperationsSB.storyboard */; };
 		DE7482002A042C580090F5EC /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481FF2A042C580090F5EC /* RequestVC.swift */; };
 		DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */; };
 		DE7482052A04337C0090F5EC /* DashboardSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482042A04337C0090F5EC /* DashboardSB.storyboard */; };
 		DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7482062A0434740090F5EC /* DashboardVC.swift */; };
+		DE74EA2A2A09FE47000D6592 /* OperationsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */; };
 		DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */; };
 		DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA76C062A049541002F6F95 /* PassCodeVC.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		1E7B575E2A09D77600C69A01 /* OperationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsVC.swift; sourceTree = "<group>"; };
 		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
 		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
@@ -125,11 +127,11 @@
 		DE7481F52A042B460090F5EC /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
 		DE7481F92A042B8A0090F5EC /* SendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendVC.swift; sourceTree = "<group>"; };
 		DE7481FB2A042B9A0090F5EC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		DE7481FD2A042C160090F5EC /* OperationsSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OperationsSB.storyboard; sourceTree = "<group>"; };
 		DE7481FF2A042C580090F5EC /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
 		DE7482042A04337C0090F5EC /* DashboardSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
 		DE7482062A0434740090F5EC /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OperationsSB.storyboard; sourceTree = "<group>"; };
 		DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionVC.swift; sourceTree = "<group>"; };
 		DEA76C062A049541002F6F95 /* PassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -384,8 +386,9 @@
 		DE7481F82A042B690090F5EC /* OperationsScreens */ = {
 			isa = PBXGroup;
 			children = (
+				DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */,
+				1E7B575E2A09D77600C69A01 /* OperationsVC.swift */,
 				DE7481F92A042B8A0090F5EC /* SendVC.swift */,
-				DE7481FD2A042C160090F5EC /* OperationsSB.storyboard */,
 				DE7481FF2A042C580090F5EC /* RequestVC.swift */,
 			);
 			path = OperationsScreens;
@@ -538,8 +541,8 @@
 				DE6950222A017F6A00FF8715 /* LaunchScreen.storyboard in Resources */,
 				1E41D8F02A02FFDC00F73F1C /* Roboto-BlackItalic.ttf in Resources */,
 				1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */,
+				DE74EA2A2A09FE47000D6592 /* OperationsSB.storyboard in Resources */,
 				1E41D8E82A02FFDC00F73F1C /* Roboto-Light.ttf in Resources */,
-				DE7481FE2A042C160090F5EC /* OperationsSB.storyboard in Resources */,
 				DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */,
 				1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */,
 				1E41D8F32A02FFDC00F73F1C /* Roboto-Black.ttf in Resources */,
@@ -580,6 +583,7 @@
 				DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
+				1E7B57602A09D77600C69A01 /* OperationsVC.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,

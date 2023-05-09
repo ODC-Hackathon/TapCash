@@ -17,6 +17,7 @@ class ProfilesVC: UIViewController {
             profilesCollectionView.register(nib, forCellWithReuseIdentifier: "profilesCVCell")
         }
     }
+    var profiles : [Family] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,16 +39,16 @@ class ProfilesVC: UIViewController {
 
 extension ProfilesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        profiles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profilesCVCell", for: indexPath) as! ProfilesCVCell
-        
+        cell.configName(profiles[indexPath.row].name ?? "")
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: (collectionView.frame.width / 2) - 20 , height: (collectionView.frame.width / 2) - 20 )
+        CGSize(width: (collectionView.frame.width / 2) - 20 , height: (collectionView.frame.width / 2)  )
     }
 }

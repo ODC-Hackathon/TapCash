@@ -9,6 +9,7 @@ import UIKit
 
 class ProfilesCVCell: UICollectionViewCell {
 
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var image: UIImageView!{
         didSet{
             image.image = UIImage(named: "avatar")
@@ -18,5 +19,7 @@ class ProfilesCVCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    func configName(_ userName : String){
+          name.text = userName
+      }
 }
