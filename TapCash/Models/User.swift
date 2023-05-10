@@ -23,12 +23,12 @@ struct Datum : Codable{
 // MARK: - User
 struct User : Codable{
     let id: Int?
-    let name, userName: String?
+    let name, user_name: String?
     let family: [Family]?
 }
 
 // MARK: - Family
 struct Family : Codable{
-    var userName, name: String?
+    var user_name, name: String?
     var sponsorId: Int?
 }

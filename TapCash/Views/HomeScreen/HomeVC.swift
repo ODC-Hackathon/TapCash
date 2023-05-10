@@ -22,7 +22,10 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func sendMoneyAction(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 1
+    }
+    
 
 }
 extension HomeVC : UITableViewDelegate{

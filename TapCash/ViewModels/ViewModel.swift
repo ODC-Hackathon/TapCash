@@ -10,7 +10,7 @@ import Foundation
 
 class UserOperations{
     var bindingLogInData : (()->()) = {}
-    var usersResult : Users!{
+    var usersResult : Welcome!{
         didSet{
             bindingLogInData()
         }
@@ -27,10 +27,10 @@ class UserOperations{
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: data, options: [])
                 if let jsonString = String(data: jsonData, encoding: .utf8) {
-                  //  print(jsonString)
+                    print(jsonString)
                     if let jsonData = jsonString.data(using: .utf8) {
                         do {
-                            let myModel = try JSONDecoder().decode(Users.self, from: jsonData)
+                            let myModel = try JSONDecoder().decode(Welcome.self, from: jsonData)
                             self.usersResult = myModel
                             //print(myModel) // Output: MyModel(id: 1, name: "John Doe")
                         } catch {
@@ -48,6 +48,12 @@ class UserOperations{
     
     func addCustomer(url: Endpoints, parameters : [String:Any]) {
         NetworkServices.postMethod(url: url.path, parameters: parameters, token: nil) { response in
+            self.userResponse = response
+        }
+    }
+    //MARK: passCode post
+    func passCode (url : Endpoints , parameter : [String: Any],token:String){
+        NetworkServices.postMethod(url: url.path, parameters: parameter, token: token ) { response in
             self.userResponse = response
         }
     }
