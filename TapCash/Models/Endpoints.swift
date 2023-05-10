@@ -12,6 +12,7 @@ enum Endpoints {
     case login
     case forgetPW
     case getProfiles
+    case sendMoney
     var path: String {
         switch self {
             case .register:
@@ -22,6 +23,8 @@ enum Endpoints {
                 return "\(baseUrl)/password/reset"
             case .getProfiles:
                 return "\(baseUrl)/profiles"
+        case .sendMoney:
+            return "\(baseUrl)/user/send-money"
                 
         }
     }

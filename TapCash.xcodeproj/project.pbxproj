@@ -24,6 +24,7 @@
 		1E7B57602A09D77600C69A01 /* OperationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B575E2A09D77600C69A01 /* OperationsVC.swift */; };
 		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
 		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
+		1E92B6ED2A0AEE90005B8E03 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B6EC2A0AEE90005B8E03 /* Account.swift */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
 		DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */; };
 		DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */; };
@@ -31,6 +32,15 @@
 		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
 		DE41F8F82A0B99A500263E5C /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */; };
 		DE41F8FA2A0BA0D800263E5C /* AddMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */; };
+		DE41F8E22A0B919E00263E5C /* ChartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8DD2A0B919E00263E5C /* ChartCVCell.swift */; };
+		DE41F8E32A0B919E00263E5C /* ChartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE41F8DE2A0B919E00263E5C /* ChartCVCell.xib */; };
+		DE41F8E42A0B919E00263E5C /* CategoriesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8E02A0B919E00263E5C /* CategoriesTVCell.swift */; };
+		DE41F8E52A0B919E00263E5C /* CategoriesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE41F8E12A0B919E00263E5C /* CategoriesTVCell.xib */; };
+		DE41F8E82A0B91D200263E5C /* DashboardSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE41F8E62A0B91D100263E5C /* DashboardSB.storyboard */; };
+		DE41F8E92A0B91D200263E5C /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8E72A0B91D200263E5C /* DashboardVC.swift */; };
+		DE41F8EF2A0B96DE00263E5C /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8EE2A0B96DE00263E5C /* TinyConstraints */; };
+		DE41F8F22A0B977800263E5C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8F12A0B977800263E5C /* Algorithms */; };
+		DE41F8F52A0B985800263E5C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8F42A0B985800263E5C /* Charts */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
 		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
 		DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950162A017F6800FF8715 /* HomeVC.swift */; };
@@ -53,16 +63,12 @@
 		DE6950672A0190E500FF8715 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE6950662A0190E500FF8715 /* Lottie */; };
 		DE745A992A0A13F800CDEF42 /* RegisterTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */; };
 		DE745A9B2A0A26D500CDEF42 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */; };
-		DE7481F12A042A230090F5EC /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481EF2A042A230090F5EC /* CategoryCVCell.swift */; };
-		DE7481F22A042A230090F5EC /* CategoryCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F02A042A230090F5EC /* CategoryCVCell.xib */; };
 		DE7481F42A042A3C0090F5EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F32A042A3C0090F5EC /* Main.storyboard */; };
 		DE7481F62A042B460090F5EC /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7481F52A042B460090F5EC /* HomeSB.storyboard */; };
 		DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481F92A042B8A0090F5EC /* SendVC.swift */; };
 		DE7481FC2A042B9A0090F5EC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481FB2A042B9A0090F5EC /* ProfileVC.swift */; };
 		DE7482002A042C580090F5EC /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481FF2A042C580090F5EC /* RequestVC.swift */; };
 		DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */; };
-		DE7482052A04337C0090F5EC /* DashboardSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482042A04337C0090F5EC /* DashboardSB.storyboard */; };
-		DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7482062A0434740090F5EC /* DashboardVC.swift */; };
 		DE74EA2A2A09FE47000D6592 /* OperationsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */; };
 		DE9164752A07B78D00E8D5C7 /* PersonalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */; };
 		DE9164772A07B7F000E8D5C7 /* FamilyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */; };
@@ -107,6 +113,7 @@
 		1E7B575E2A09D77600C69A01 /* OperationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsVC.swift; sourceTree = "<group>"; };
 		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
 		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
+		1E92B6EC2A0AEE90005B8E03 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesCVCell.swift; sourceTree = "<group>"; };
 		DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilesCVCell.xib; sourceTree = "<group>"; };
@@ -114,6 +121,12 @@
 		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTVController.swift; path = ../../../../../../../../Volumes/All/Downloads/ProfileTVController.swift; sourceTree = "<group>"; };
 		DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberVC.swift; sourceTree = "<group>"; };
+		DE41F8DD2A0B919E00263E5C /* ChartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCVCell.swift; sourceTree = "<group>"; };
+		DE41F8DE2A0B919E00263E5C /* ChartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartCVCell.xib; sourceTree = "<group>"; };
+		DE41F8E02A0B919E00263E5C /* CategoriesTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTVCell.swift; sourceTree = "<group>"; };
+		DE41F8E12A0B919E00263E5C /* CategoriesTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesTVCell.xib; sourceTree = "<group>"; };
+		DE41F8E62A0B91D100263E5C /* DashboardSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
+		DE41F8E72A0B91D200263E5C /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE6950142A017F6800FF8715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,16 +147,12 @@
 		DE6950562A018AD000FF8715 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTVController.swift; sourceTree = "<group>"; };
 		DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		DE7481EF2A042A230090F5EC /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
-		DE7481F02A042A230090F5EC /* CategoryCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVCell.xib; sourceTree = "<group>"; };
 		DE7481F32A042A3C0090F5EC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DE7481F52A042B460090F5EC /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
 		DE7481F92A042B8A0090F5EC /* SendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendVC.swift; sourceTree = "<group>"; };
 		DE7481FB2A042B9A0090F5EC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		DE7481FF2A042C580090F5EC /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
-		DE7482042A04337C0090F5EC /* DashboardSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
-		DE7482062A0434740090F5EC /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OperationsSB.storyboard; sourceTree = "<group>"; };
 		DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsVC.swift; sourceTree = "<group>"; };
 		DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyVC.swift; sourceTree = "<group>"; };
@@ -163,8 +172,11 @@
 				DE6950642A018EA500FF8715 /* OrderedCollections in Frameworks */,
 				DE6950602A018EA500FF8715 /* Collections in Frameworks */,
 				DE6950622A018EA500FF8715 /* DequeModule in Frameworks */,
+				DE41F8EF2A0B96DE00263E5C /* TinyConstraints in Frameworks */,
+				DE41F8F52A0B985800263E5C /* Charts in Frameworks */,
 				DE69505A2A018C1C00FF8715 /* Kingfisher in Frameworks */,
 				DE69505D2A018C3B00FF8715 /* Alamofire in Frameworks */,
+				DE41F8F22A0B977800263E5C /* Algorithms in Frameworks */,
 				DE6950672A0190E500FF8715 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +255,24 @@
 				DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */,
 			);
 			path = AuthenticationScreens;
+			sourceTree = "<group>";
+		};
+		DE41F8DC2A0B919E00263E5C /* ChartCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE41F8DD2A0B919E00263E5C /* ChartCVCell.swift */,
+				DE41F8DE2A0B919E00263E5C /* ChartCVCell.xib */,
+			);
+			path = ChartCell;
+			sourceTree = "<group>";
+		};
+		DE41F8DF2A0B919E00263E5C /* CategoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE41F8E02A0B919E00263E5C /* CategoriesTVCell.swift */,
+				DE41F8E12A0B919E00263E5C /* CategoriesTVCell.xib */,
+			);
+			path = CategoriesCell;
 			sourceTree = "<group>";
 		};
 		DE6950062A017F6800FF8715 = {
@@ -344,6 +374,7 @@
 				DE69504A2A0189C700FF8715 /* NetworkServices */,
 				DE6950502A018A8C00FF8715 /* User.swift */,
 				DE745A9A2A0A26D500CDEF42 /* Endpoints.swift */,
+				1E92B6EC2A0AEE90005B8E03 /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,20 +418,12 @@
 			isa = PBXGroup;
 			children = (
 				DEF96EBC2A07EB38001AAF69 /* FamilyMemberCell */,
+				DE41F8DF2A0B919E00263E5C /* CategoriesCell */,
+				DE41F8DC2A0B919E00263E5C /* ChartCell */,
 				DE1E6B422A07878A006241D9 /* ProfilesCell */,
 				1E858A122A058EB700B256DC /* TransitionCell */,
-				DE7481EE2A0429F80090F5EC /* CategoriesCell */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		DE7481EE2A0429F80090F5EC /* CategoriesCell */ = {
-			isa = PBXGroup;
-			children = (
-				DE7481EF2A042A230090F5EC /* CategoryCVCell.swift */,
-				DE7481F02A042A230090F5EC /* CategoryCVCell.xib */,
-			);
-			path = CategoriesCell;
 			sourceTree = "<group>";
 		};
 		DE7481F72A042B590090F5EC /* ProfileScreens */ = {
@@ -430,8 +453,8 @@
 		DE7482032A04335B0090F5EC /* DashboardScreens */ = {
 			isa = PBXGroup;
 			children = (
-				DE7482042A04337C0090F5EC /* DashboardSB.storyboard */,
-				DE7482062A0434740090F5EC /* DashboardVC.swift */,
+				DE41F8E62A0B91D100263E5C /* DashboardSB.storyboard */,
+				DE41F8E72A0B91D200263E5C /* DashboardVC.swift */,
 			);
 			path = DashboardScreens;
 			sourceTree = "<group>";
@@ -469,6 +492,9 @@
 				DE6950632A018EA500FF8715 /* OrderedCollections */,
 				DE6950662A0190E500FF8715 /* Lottie */,
 				1E41D8D72A02FA9300F73F1C /* IQKeyboardManagerSwift */,
+				DE41F8EE2A0B96DE00263E5C /* TinyConstraints */,
+				DE41F8F12A0B977800263E5C /* Algorithms */,
+				DE41F8F42A0B985800263E5C /* Charts */,
 			);
 			productName = TapCash;
 			productReference = DE69500F2A017F6800FF8715 /* TapCash.app */;
@@ -548,6 +574,9 @@
 				DE69505E2A018EA500FF8715 /* XCRemoteSwiftPackageReference "swift-collections" */,
 				DE6950652A0190E500FF8715 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				1E41D8D62A02FA9300F73F1C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DE41F8ED2A0B96DE00263E5C /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+				DE41F8F02A0B977800263E5C /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				DE41F8F32A0B985800263E5C /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = DE6950102A017F6800FF8715 /* Products */;
 			projectDirPath = "";
@@ -567,17 +596,18 @@
 			files = (
 				1E41D8F12A02FFDC00F73F1C /* Roboto-Bold.ttf in Resources */,
 				1E41D8EF2A02FFDC00F73F1C /* LICENSE.txt in Resources */,
-				DE7482052A04337C0090F5EC /* DashboardSB.storyboard in Resources */,
 				1E41D8EC2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf in Resources */,
 				1E41D8E92A02FFDC00F73F1C /* Roboto-Regular.ttf in Resources */,
 				DEF96EC22A07EB9A001AAF69 /* FamilyTVCell.xib in Resources */,
 				DE7481F22A042A230090F5EC /* CategoryCVCell.xib in Resources */,
 				1E41D8ED2A02FFDC00F73F1C /* Roboto-LightItalic.ttf in Resources */,
+				DE41F8E52A0B919E00263E5C /* CategoriesTVCell.xib in Resources */,
 				1E41D8E72A02FFDC00F73F1C /* Roboto-Medium.ttf in Resources */,
 				DE6950222A017F6A00FF8715 /* LaunchScreen.storyboard in Resources */,
 				1E41D8F02A02FFDC00F73F1C /* Roboto-BlackItalic.ttf in Resources */,
 				1E41D8F22A02FFDC00F73F1C /* Roboto-Thin.ttf in Resources */,
 				DE74EA2A2A09FE47000D6592 /* OperationsSB.storyboard in Resources */,
+				DE41F8E32A0B919E00263E5C /* ChartCVCell.xib in Resources */,
 				1E41D8E82A02FFDC00F73F1C /* Roboto-Light.ttf in Resources */,
 				DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */,
 				1E41D8EB2A02FFDC00F73F1C /* Roboto-ThinItalic.ttf in Resources */,
@@ -587,6 +617,7 @@
 				DE7481F62A042B460090F5EC /* HomeSB.storyboard in Resources */,
 				1E41D8EA2A02FFDC00F73F1C /* Roboto-MediumItalic.ttf in Resources */,
 				DE69501F2A017F6A00FF8715 /* Assets.xcassets in Resources */,
+				DE41F8E82A0B91D200263E5C /* DashboardSB.storyboard in Resources */,
 				DE7481F42A042A3C0090F5EC /* Main.storyboard in Resources */,
 				1E41D8EE2A02FFDC00F73F1C /* Roboto-Italic.ttf in Resources */,
 				DE69501A2A017F6800FF8715 /* AuthenticationSB.storyboard in Resources */,
@@ -616,12 +647,13 @@
 			files = (
 				DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */,
 				DE7482002A042C580090F5EC /* RequestVC.swift in Sources */,
-				DE7482072A0434740090F5EC /* DashboardVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
 				DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
+				1E92B6ED2A0AEE90005B8E03 /* Account.swift in Sources */,
 				1E7B57602A09D77600C69A01 /* OperationsVC.swift in Sources */,
 				DE41F8FA2A0BA0D800263E5C /* AddMemberVC.swift in Sources */,
+				DE41F8E22A0B919E00263E5C /* ChartCVCell.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
@@ -635,12 +667,13 @@
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
 				DE9164752A07B78D00E8D5C7 /* PersonalDetailsVC.swift in Sources */,
+				DE41F8E92A0B91D200263E5C /* DashboardVC.swift in Sources */,
 				DE745A992A0A13F800CDEF42 /* RegisterTVController.swift in Sources */,
 				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
 				DE7481FC2A042B9A0090F5EC /* ProfileVC.swift in Sources */,
 				DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */,
 				DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */,
-				DE7481F12A042A230090F5EC /* CategoryCVCell.swift in Sources */,
+				DE41F8E42A0B919E00263E5C /* CategoriesTVCell.swift in Sources */,
 				DE6950572A018AD000FF8715 /* ViewModel.swift in Sources */,
 				DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */,
 			);
@@ -994,6 +1027,30 @@
 				minimumVersion = 6.2.1;
 			};
 		};
+		DE41F8ED2A0B96DE00263E5C /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		DE41F8F02A0B977800263E5C /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE41F8F32A0B985800263E5C /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
 		DE6950582A018C1C00FF8715 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -1033,6 +1090,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1E41D8D62A02FA9300F73F1C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		DE41F8EE2A0B96DE00263E5C /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE41F8ED2A0B96DE00263E5C /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+		DE41F8F12A0B977800263E5C /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE41F8F02A0B977800263E5C /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		DE41F8F42A0B985800263E5C /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE41F8F32A0B985800263E5C /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 		DE6950592A018C1C00FF8715 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
