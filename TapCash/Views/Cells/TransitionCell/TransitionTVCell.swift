@@ -19,7 +19,7 @@ class TransitionTVCell: UITableViewCell {
     @IBOutlet weak var price: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        innerFrame.layer.cornerRadius = 30
+        innerFrame.layer.cornerRadius = 20
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

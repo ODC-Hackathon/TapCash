@@ -30,6 +30,8 @@
 		DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */; };
 		DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */; };
 		DE3A7DA72A01C9F000EC6982 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */; };
+		DE41F8F82A0B99A500263E5C /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */; };
+		DE41F8FA2A0BA0D800263E5C /* AddMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */; };
 		DE41F8E22A0B919E00263E5C /* ChartCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8DD2A0B919E00263E5C /* ChartCVCell.swift */; };
 		DE41F8E32A0B919E00263E5C /* ChartCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE41F8DE2A0B919E00263E5C /* ChartCVCell.xib */; };
 		DE41F8E42A0B919E00263E5C /* CategoriesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8E02A0B919E00263E5C /* CategoriesTVCell.swift */; };
@@ -68,8 +70,13 @@
 		DE7482002A042C580090F5EC /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7481FF2A042C580090F5EC /* RequestVC.swift */; };
 		DE7482022A042C9A0090F5EC /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */; };
 		DE74EA2A2A09FE47000D6592 /* OperationsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */; };
+		DE9164752A07B78D00E8D5C7 /* PersonalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */; };
+		DE9164772A07B7F000E8D5C7 /* FamilyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */; };
 		DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */; };
 		DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA76C062A049541002F6F95 /* PassCodeVC.swift */; };
+		DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */; };
+		DEF96EC22A07EB9A001AAF69 /* FamilyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */; };
+		DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +119,8 @@
 		DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilesCVCell.xib; sourceTree = "<group>"; };
 		DE1E6B472A078CA7006241D9 /* ProfilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesVC.swift; sourceTree = "<group>"; };
 		DE3A7DA62A01C9F000EC6982 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTVController.swift; path = ../../../../../../../../Volumes/All/Downloads/ProfileTVController.swift; sourceTree = "<group>"; };
+		DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberVC.swift; sourceTree = "<group>"; };
 		DE41F8DD2A0B919E00263E5C /* ChartCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCVCell.swift; sourceTree = "<group>"; };
 		DE41F8DE2A0B919E00263E5C /* ChartCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartCVCell.xib; sourceTree = "<group>"; };
 		DE41F8E02A0B919E00263E5C /* CategoriesTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTVCell.swift; sourceTree = "<group>"; };
@@ -145,8 +154,13 @@
 		DE7481FF2A042C580090F5EC /* RequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
 		DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSB.storyboard; sourceTree = "<group>"; };
 		DE74EA292A09FE46000D6592 /* OperationsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OperationsSB.storyboard; sourceTree = "<group>"; };
+		DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsVC.swift; sourceTree = "<group>"; };
+		DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyVC.swift; sourceTree = "<group>"; };
 		DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionVC.swift; sourceTree = "<group>"; };
 		DEA76C062A049541002F6F95 /* PassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeVC.swift; sourceTree = "<group>"; };
+		DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTVCell.swift; sourceTree = "<group>"; };
+		DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilyTVCell.xib; sourceTree = "<group>"; };
+		DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +408,7 @@
 		DE745A972A0A13E300CDEF42 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */,
 				DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */,
 			);
 			path = CustomViews;
@@ -402,6 +417,7 @@
 		DE7481ED2A0429EE0090F5EC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DEF96EBC2A07EB38001AAF69 /* FamilyMemberCell */,
 				DE41F8DF2A0B919E00263E5C /* CategoriesCell */,
 				DE41F8DC2A0B919E00263E5C /* ChartCell */,
 				DE1E6B422A07878A006241D9 /* ProfilesCell */,
@@ -415,6 +431,10 @@
 			children = (
 				DE7481FB2A042B9A0090F5EC /* ProfileVC.swift */,
 				DE7482012A042C9A0090F5EC /* ProfileSB.storyboard */,
+				DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */,
+				DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */,
+				DEF96EC52A08324B001AAF69 /* MemberDetailsVC.swift */,
+				DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */,
 			);
 			path = ProfileScreens;
 			sourceTree = "<group>";
@@ -437,6 +457,15 @@
 				DE41F8E72A0B91D200263E5C /* DashboardVC.swift */,
 			);
 			path = DashboardScreens;
+			sourceTree = "<group>";
+		};
+		DEF96EBC2A07EB38001AAF69 /* FamilyMemberCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */,
+				DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */,
+			);
+			path = FamilyMemberCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,6 +598,8 @@
 				1E41D8EF2A02FFDC00F73F1C /* LICENSE.txt in Resources */,
 				1E41D8EC2A02FFDC00F73F1C /* Roboto-BoldItalic.ttf in Resources */,
 				1E41D8E92A02FFDC00F73F1C /* Roboto-Regular.ttf in Resources */,
+				DEF96EC22A07EB9A001AAF69 /* FamilyTVCell.xib in Resources */,
+				DE7481F22A042A230090F5EC /* CategoryCVCell.xib in Resources */,
 				1E41D8ED2A02FFDC00F73F1C /* Roboto-LightItalic.ttf in Resources */,
 				DE41F8E52A0B919E00263E5C /* CategoriesTVCell.xib in Resources */,
 				1E41D8E72A02FFDC00F73F1C /* Roboto-Medium.ttf in Resources */,
@@ -617,19 +648,25 @@
 				DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */,
 				DE7482002A042C580090F5EC /* RequestVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
+				DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */,
 				DE6950172A017F6800FF8715 /* HomeVC.swift in Sources */,
 				1E92B6ED2A0AEE90005B8E03 /* Account.swift in Sources */,
 				1E7B57602A09D77600C69A01 /* OperationsVC.swift in Sources */,
+				DE41F8FA2A0BA0D800263E5C /* AddMemberVC.swift in Sources */,
 				DE41F8E22A0B919E00263E5C /* ChartCVCell.swift in Sources */,
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
+				DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
+				DE9164772A07B7F000E8D5C7 /* FamilyVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
+				DE41F8F82A0B99A500263E5C /* ProfileTVController.swift in Sources */,
 				DE745A9B2A0A26D500CDEF42 /* Endpoints.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
+				DE9164752A07B78D00E8D5C7 /* PersonalDetailsVC.swift in Sources */,
 				DE41F8E92A0B91D200263E5C /* DashboardVC.swift in Sources */,
 				DE745A992A0A13F800CDEF42 /* RegisterTVController.swift in Sources */,
 				DE6950512A018A8C00FF8715 /* User.swift in Sources */,
