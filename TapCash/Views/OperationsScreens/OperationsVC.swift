@@ -69,4 +69,20 @@ class OperationsVC: UIViewController {
         }
         
     }
+    
+    @IBAction func sendRequest(_ sender: UIButton) {
+        if totalAmount < 5 {
+            let alert = UIAlertController(title: "Restriction", message: "minimum amount is 5", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(okAction)
+            self.present(alert, animated: true)
+        }
+        else{
+            let requestScreen = self.storyboard?.instantiateViewController(withIdentifier: "requestScreen") as! RequestVC
+            requestScreen.from = sender.tag
+            requestScreen.amount = totalAmount
+            self.navigationController?.pushViewController(requestScreen, animated: true)
+        }
+    }
+    
 }

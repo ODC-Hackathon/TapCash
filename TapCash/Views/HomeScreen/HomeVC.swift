@@ -22,11 +22,16 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func addBtn(_ sender: Any) {
+    }
     @IBAction func sendMoneyAction(_ sender: Any) {
         self.tabBarController?.selectedIndex = 1
     }
     
-
+    @IBAction func insightsBtn(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 2
+    }
+    
 }
 extension HomeVC : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
