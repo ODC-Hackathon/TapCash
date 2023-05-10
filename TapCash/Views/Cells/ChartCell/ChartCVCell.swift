@@ -1,13 +1,13 @@
 //
-//  CategoryCVCell.swift
+//  ChartCVCell.swift
 //  TapCash
 //
-//  Created by Adham Samer on 04/05/2023.
+//  Created by Mahmoud on 07/05/2023.
 //
 
 import UIKit
 
-class CategoryCVCell: UICollectionViewCell {
+class ChartCVCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
