@@ -26,8 +26,8 @@ class FamilyVC: UIViewController {
     }
 
     @objc func gotToMemberDetails(){
-        let mmbrVC = self.storyboard?.instantiateViewController(withIdentifier: "addMemberVC") as! MemberDetailsVC
-        navigationController?.pushViewController(mmbrVC, animated: true)
+        let addMmbrVC = self.storyboard?.instantiateViewController(withIdentifier: "addMemberVC") as! AddMemberVC
+        navigationController?.pushViewController(addMmbrVC, animated: true)
     }
     /*
      // MARK: - Navigation
@@ -45,16 +45,29 @@ class FamilyVC: UIViewController {
 
 extension FamilyVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "familyTVCell", for: indexPath) as! FamilyTVCell
-        cell.name.text = "Adham"
-        cell.type.text = "Admin"
-        cell.ppImage.image = UIImage(named: "Netflix")
+        switch indexPath.row {
+            case 0:
+                cell.name.text = "Adham"
+                cell.type.text = "Admin"
+                cell.ppImage.image = UIImage(named: "avatar")
+            case 1,2:
+                cell.name.text = "Mahmoud"
+                cell.type.text = "Child"
+                cell.ppImage.image = UIImage(named: "Netflix")
+            default:
+                print("Default")
+        }
+        
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mmbrVC = self.storyboard?.instantiateViewController(withIdentifier: "memberDetailsVC") as! MemberDetailsVC
+        navigationController?.pushViewController(mmbrVC, animated: true)
+    }
     
 }

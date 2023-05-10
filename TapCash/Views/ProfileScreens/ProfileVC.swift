@@ -10,7 +10,7 @@ import UIKit
 class ProfileVC: UIViewController, ProfileTVControllerDelegate{
     func showPassAlert() {
         //Will be replaced with an alert containing textfield to check pincode
-        showAlert(title: "Done", msg: "Selected", handler: { _ in })
+        showAlert(title: "Done", msg: "Passcode Selected", handler: { _ in })
     }
     
 
