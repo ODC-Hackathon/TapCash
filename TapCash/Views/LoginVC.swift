@@ -15,7 +15,9 @@ class LoginVC: UIViewController {
             loginButton.layer.cornerRadius = 10
         }
     }
+    let userDefualt = UserDefaults.standard
     var userMV : UserOperations?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userMV = UserOperations()
@@ -43,24 +45,26 @@ class LoginVC: UIViewController {
             self.present(alert, animated: true)
         }
         else{
-            userMV?.postCustomer(url: .login, data: body, complition: { _ in
+            userMV?.postCustomer(url: .getProfiles, data: body, complition: { _ in
             })
             userMV?.bindingLogInData = {
-                print(self.userMV?.usersResult.data?[0].user?.family?.count ?? 0)
-                print(self.userMV?.usersResult.data?[0].token ?? "")
-                if self.userMV?.usersResult.data?[0].token != nil{
+                print(self.userMV?.usersResult.data?.account?[0].user?.family?.count ?? 0)
+                print(self.userMV?.usersResult.data?.token ?? "")
+                if self.userMV?.usersResult.data?.token != nil{
+                    
                     DispatchQueue.main.async {
                         let profileScreen = self.storyboard?.instantiateViewController(withIdentifier: "profiles") as! ProfilesVC
                         var masterUser = Family()
-                        masterUser.name = self.userMV?.usersResult.data?[0].user?.name
-                        masterUser.sponsorId = self.userMV?.usersResult.data?[0].user?.id
-                        masterUser.userName = self.userMV?.usersResult.data?[0].user?.userName
+                        masterUser.name = self.userMV?.usersResult.data?.account?[0].user?.name
+                        masterUser.sponsorId = self.userMV?.usersResult.data?.account?[0].user?.id
+                        masterUser.user_name = self.userMV?.usersResult.data?.account?[0].user?.user_name
                         profileScreen.profiles.append(masterUser)
-                        for user in self.userMV?.usersResult.data?[0].user?.family ?? []
+                        for user in self.userMV?.usersResult.data?.account?[0].user?.family ?? []
                         {
                             profileScreen.profiles.append(user)
                             
                         }
+                        profileScreen.token = self.userMV?.usersResult.data?.token ?? ""
                         self.navigationController?.pushViewController(profileScreen, animated: true)
                     }
                 }

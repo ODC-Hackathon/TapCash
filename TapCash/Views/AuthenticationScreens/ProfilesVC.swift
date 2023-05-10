@@ -17,6 +17,8 @@ class ProfilesVC: UIViewController {
             profilesCollectionView.register(nib, forCellWithReuseIdentifier: "profilesCVCell")
         }
     }
+    let userDefualt = UserDefaults.standard
+    var token : String = ""
     var profiles : [Family] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,5 +52,19 @@ extension ProfilesVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: (collectionView.frame.width / 2) - 20 , height: (collectionView.frame.width / 2)  )
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        userDefualt.set(profiles[indexPath.row].user_name, forKey: "userName")
+        if indexPath.row == 0{
+            userDefualt.set("user", forKey: "type")
+        }
+        else{
+            userDefualt.set("family", forKey: "type")
+        }
+        let passCodeScreen = self.storyboard?.instantiateViewController(withIdentifier: "passCode") as! PassCodeVC
+        print(token)
+        passCodeScreen.token = token 
+        self.navigationController?.pushViewController(passCodeScreen, animated: true)
     }
 }
