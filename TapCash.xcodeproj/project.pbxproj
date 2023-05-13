@@ -25,6 +25,7 @@
 		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
 		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
 		1E92B6ED2A0AEE90005B8E03 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B6EC2A0AEE90005B8E03 /* Account.swift */; };
+		1ED71B152A0FAA57002BFF9C /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
 		DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */; };
 		DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */; };
@@ -39,7 +40,6 @@
 		DE41F8EF2A0B96DE00263E5C /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8EE2A0B96DE00263E5C /* TinyConstraints */; };
 		DE41F8F22A0B977800263E5C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8F12A0B977800263E5C /* Algorithms */; };
 		DE41F8F52A0B985800263E5C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DE41F8F42A0B985800263E5C /* Charts */; };
-		DE41F8F82A0B99A500263E5C /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */; };
 		DE41F8FA2A0BA0D800263E5C /* AddMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */; };
 		DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950122A017F6800FF8715 /* AppDelegate.swift */; };
 		DE6950152A017F6800FF8715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6950142A017F6800FF8715 /* SceneDelegate.swift */; };
@@ -114,6 +114,7 @@
 		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
 		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
 		1E92B6EC2A0AEE90005B8E03 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTVController.swift; sourceTree = "<group>"; };
 		1EDE86112A01BB1200B9C156 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
 		DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesCVCell.swift; sourceTree = "<group>"; };
 		DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilesCVCell.xib; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 		DE41F8E12A0B919E00263E5C /* CategoriesTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesTVCell.xib; sourceTree = "<group>"; };
 		DE41F8E62A0B91D100263E5C /* DashboardSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DashboardSB.storyboard; sourceTree = "<group>"; };
 		DE41F8E72A0B91D200263E5C /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
-		DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTVController.swift; path = ../../../../../../../../Volumes/All/Downloads/ProfileTVController.swift; sourceTree = "<group>"; };
 		DE41F8F92A0BA0D800263E5C /* AddMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberVC.swift; sourceTree = "<group>"; };
 		DE69500F2A017F6800FF8715 /* TapCash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapCash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6950122A017F6800FF8715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -415,7 +415,7 @@
 		DE745A972A0A13E300CDEF42 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				DE41F8F72A0B99A500263E5C /* ProfileTVController.swift */,
+				1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */,
 				DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */,
 			);
 			path = CustomViews;
@@ -652,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED71B152A0FAA57002BFF9C /* ProfileTVController.swift in Sources */,
 				DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */,
 				DE7482002A042C580090F5EC /* RequestVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
@@ -669,7 +670,6 @@
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
 				DE9164772A07B7F000E8D5C7 /* FamilyVC.swift in Sources */,
 				DE6950132A017F6800FF8715 /* AppDelegate.swift in Sources */,
-				DE41F8F82A0B99A500263E5C /* ProfileTVController.swift in Sources */,
 				DE745A9B2A0A26D500CDEF42 /* Endpoints.swift in Sources */,
 				DE6950532A018AAF00FF8715 /* Protocols.swift in Sources */,
 				DE6950552A018ABE00FF8715 /* NetworkServices.swift in Sources */,
