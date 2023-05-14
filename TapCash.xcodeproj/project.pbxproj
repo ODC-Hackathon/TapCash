@@ -25,7 +25,6 @@
 		1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E858A132A058F1300B256DC /* TransitionTVCell.swift */; };
 		1E858A162A058F1300B256DC /* TransitionTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E858A142A058F1300B256DC /* TransitionTVCell.xib */; };
 		1E92B6ED2A0AEE90005B8E03 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92B6EC2A0AEE90005B8E03 /* Account.swift */; };
-		1ED71B152A0FAA57002BFF9C /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */; };
 		1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE86112A01BB1200B9C156 /* LoginVC.swift */; };
 		DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E6B432A07888B006241D9 /* ProfilesCVCell.swift */; };
 		DE1E6B462A07888B006241D9 /* ProfilesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1E6B442A07888B006241D9 /* ProfilesCVCell.xib */; };
@@ -111,6 +110,7 @@
 		1E41D8E42A02FFDC00F73F1C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		1E41D8E52A02FFDC00F73F1C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		1E41D8E62A02FFDC00F73F1C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		1E7372782A1097AA0059C135 /* ProfileTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTVController.swift; path = TapCash/Views/CustomViews/ProfileTVController.swift; sourceTree = "<group>"; };
 		1E7B575E2A09D77600C69A01 /* OperationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsVC.swift; sourceTree = "<group>"; };
 		1E858A132A058F1300B256DC /* TransitionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTVCell.swift; sourceTree = "<group>"; };
 		1E858A142A058F1300B256DC /* TransitionTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionTVCell.xib; sourceTree = "<group>"; };
@@ -228,6 +228,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		1E7372772A1097500059C135 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		1E858A122A058EB700B256DC /* TransitionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,10 +295,12 @@
 		DE6950062A017F6800FF8715 = {
 			isa = PBXGroup;
 			children = (
+				1E7372782A1097AA0059C135 /* ProfileTVController.swift */,
 				DE6950112A017F6800FF8715 /* TapCash */,
 				DE69502B2A017F6A00FF8715 /* TapCashTests */,
 				DE6950352A017F6A00FF8715 /* TapCashUITests */,
 				DE6950102A017F6800FF8715 /* Products */,
+				1E7372772A1097500059C135 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -654,7 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED71B152A0FAA57002BFF9C /* ProfileTVController.swift in Sources */,
+				DEA768462A0FFED3003A5DCB /* ProfileTVController.swift in Sources */,
 				DE1E6B452A07888B006241D9 /* ProfilesCVCell.swift in Sources */,
 				DE7482002A042C580090F5EC /* RequestVC.swift in Sources */,
 				DE69501D2A017F6800FF8715 /* TapCash.xcdatamodeld in Sources */,
@@ -667,7 +677,6 @@
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
-				DEA768462A0FFED3003A5DCB /* ProfileTVController.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,

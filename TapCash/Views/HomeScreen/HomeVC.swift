@@ -31,6 +31,9 @@ class HomeVC: UIViewController {
     @IBAction func insightsBtn(_ sender: Any) {
         self.tabBarController?.selectedIndex = 2
     }
+    @IBAction func profileAction(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 3
+    }
     
 }
 extension HomeVC : UITableViewDelegate{

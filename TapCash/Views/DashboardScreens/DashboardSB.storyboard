@@ -7,7 +7,6 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,49 +25,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZEc-lL-5Oo">
-                                <rect key="frame" x="0.0" y="397" width="393" height="441"/>
+                                <rect key="frame" x="0.0" y="370" width="393" height="499"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-lm-hgc">
-                                <rect key="frame" x="0.0" y="182" width="393" height="183"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIg-B0-K1w">
+                                <rect key="frame" x="0.0" y="166" width="393" height="188"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QDA-Sd-dVE">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SZI-Ys-nhQ">
-                                        <rect key="frame" x="0.0" y="27.666666666666668" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iBe-ns-4ef">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cfl-lm-hgc" firstAttribute="top" secondItem="i9e-1Z-Pwh" secondAttribute="bottom" constant="32" id="2vO-bg-dQy"/>
-                            <constraint firstItem="cfl-lm-hgc" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.214789" id="4og-0f-Jrz"/>
+                            <constraint firstItem="eIg-B0-K1w" firstAttribute="top" secondItem="i9e-1Z-Pwh" secondAttribute="bottom" constant="16" id="7AH-TM-mit"/>
+                            <constraint firstItem="ZEc-lL-5Oo" firstAttribute="top" secondItem="eIg-B0-K1w" secondAttribute="bottom" constant="16" id="FsJ-hr-Qth"/>
                             <constraint firstItem="ZEc-lL-5Oo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Q7Y-he-juA"/>
                             <constraint firstItem="i9e-1Z-Pwh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="aGJ-5X-Edu"/>
-                            <constraint firstItem="cfl-lm-hgc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="b5O-7r-i3e"/>
-                            <constraint firstItem="ZEc-lL-5Oo" firstAttribute="top" secondItem="cfl-lm-hgc" secondAttribute="bottom" constant="32" id="dVc-RH-nIT"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cfl-lm-hgc" secondAttribute="trailing" id="gqA-wL-4IO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eIg-B0-K1w" secondAttribute="trailing" id="aSB-jI-yB6"/>
+                            <constraint firstItem="eIg-B0-K1w" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.220657" id="l03-sl-0q0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZEc-lL-5Oo" secondAttribute="trailing" id="lnY-Vu-mnd"/>
                             <constraint firstItem="i9e-1Z-Pwh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="nGG-Mw-lFt"/>
-                            <constraint firstItem="ZEc-lL-5Oo" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.517606" id="qXB-8O-MgF"/>
+                            <constraint firstItem="eIg-B0-K1w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ndW-WB-vPH"/>
+                            <constraint firstItem="ZEc-lL-5Oo" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.585681" id="oKM-8j-4Jz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kg7-w7-XIe"/>
                     <connections>
                         <outlet property="categoriesTV" destination="ZEc-lL-5Oo" id="Tem-pK-lRW"/>
-                        <outlet property="chartCollection" destination="cfl-lm-hgc" id="kln-UQ-Q0l"/>
+                        <outlet property="chartView" destination="eIg-B0-K1w" id="mcT-GP-aFJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
