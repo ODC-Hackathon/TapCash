@@ -73,6 +73,7 @@
 		DE9164752A07B78D00E8D5C7 /* PersonalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */; };
 		DE9164772A07B7F000E8D5C7 /* FamilyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */; };
 		DE92E6D02A05743400E25491 /* FaceRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */; };
+		DEA768462A0FFED3003A5DCB /* ProfileTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA768452A0FFED3003A5DCB /* ProfileTVController.swift */; };
 		DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA76C062A049541002F6F95 /* PassCodeVC.swift */; };
 		DEF96EC12A07EB9A001AAF69 /* FamilyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */; };
 		DEF96EC22A07EB9A001AAF69 /* FamilyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */; };
@@ -157,6 +158,7 @@
 		DE9164742A07B78D00E8D5C7 /* PersonalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsVC.swift; sourceTree = "<group>"; };
 		DE9164762A07B7F000E8D5C7 /* FamilyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyVC.swift; sourceTree = "<group>"; };
 		DE92E6CF2A05743400E25491 /* FaceRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionVC.swift; sourceTree = "<group>"; };
+		DEA768452A0FFED3003A5DCB /* ProfileTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTVController.swift; sourceTree = "<group>"; };
 		DEA76C062A049541002F6F95 /* PassCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeVC.swift; sourceTree = "<group>"; };
 		DEF96EBF2A07EB9A001AAF69 /* FamilyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTVCell.swift; sourceTree = "<group>"; };
 		DEF96EC02A07EB9A001AAF69 /* FamilyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilyTVCell.xib; sourceTree = "<group>"; };
@@ -415,7 +417,7 @@
 		DE745A972A0A13E300CDEF42 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				1ED71B142A0FAA57002BFF9C /* ProfileTVController.swift */,
+				DEA768452A0FFED3003A5DCB /* ProfileTVController.swift */,
 				DE745A982A0A13F800CDEF42 /* RegisterTVController.swift */,
 			);
 			path = CustomViews;
@@ -665,6 +667,7 @@
 				DE7481FA2A042B8A0090F5EC /* SendVC.swift in Sources */,
 				DEF96EC62A08324B001AAF69 /* MemberDetailsVC.swift in Sources */,
 				1E858A152A058F1300B256DC /* TransitionTVCell.swift in Sources */,
+				DEA768462A0FFED3003A5DCB /* ProfileTVController.swift in Sources */,
 				1EDE86122A01BB1200B9C156 /* LoginVC.swift in Sources */,
 				DE1E6B482A078CA7006241D9 /* ProfilesVC.swift in Sources */,
 				DEA76C072A049541002F6F95 /* PassCodeVC.swift in Sources */,
