@@ -10,26 +10,43 @@ import TinyConstraints
 import Charts
 
 class DashboardVC: UIViewController {
-    let dummyData : [ChartDataEntry] = [
-    
-        BarChartDataEntry(x: 1.0, y: 10 / 100),
-        BarChartDataEntry(x: 2.0, y: 20 / 100),
-        BarChartDataEntry(x: 3.0, y: 30 / 100),
-        BarChartDataEntry(x: 4.0, y: 40 / 100),
-        BarChartDataEntry(x: 5.0, y: 50 / 100),
-        BarChartDataEntry(x: 6.0, y: 60 / 100)
+    let dataEntries = [
+        ChartDataEntry(x: 1, y: 100.0),
+        ChartDataEntry(x: 2, y: 200.0),
+        ChartDataEntry(x: 3, y: 150.0),
+        ChartDataEntry(x: 4, y: 250.0),
+        ChartDataEntry(x: 5, y: 200.0),
+        ChartDataEntry(x: 6, y: 100.0),
+        ChartDataEntry(x: 7, y: 200.0),
+        ChartDataEntry(x: 8, y: 150.0),
+        ChartDataEntry(x: 9, y: 250.0),
+        ChartDataEntry(x: 10, y: 200.0),
+        ChartDataEntry(x: 11, y: 100.0),
+        ChartDataEntry(x: 12, y: 200.0),
+        ChartDataEntry(x: 13, y: 150.0),
+        ChartDataEntry(x: 14, y: 250.0),
+        ChartDataEntry(x: 15, y: 200.0),
+        ChartDataEntry(x: 16, y: 100.0),
+        ChartDataEntry(x: 17, y: 200.0),
+        ChartDataEntry(x: 18, y: 150.0),
+        ChartDataEntry(x: 19, y: 250.0),
+        ChartDataEntry(x: 20, y: 200.0),
+        ChartDataEntry(x: 21, y: 100.0),
+        ChartDataEntry(x: 22, y: 200.0),
+        ChartDataEntry(x: 23, y: 150.0),
+        ChartDataEntry(x: 24, y: 250.0),
+        ChartDataEntry(x: 25, y: 200.0),
+        ChartDataEntry(x: 26, y: 100.0),
+        ChartDataEntry(x: 27, y: 200.0),
+        ChartDataEntry(x: 28, y: 150.0),
+        ChartDataEntry(x: 29, y: 250.0),
+        ChartDataEntry(x: 30, y: 200.0),
+        
+        
     ]
 
     
-    @IBOutlet weak var chartCollection: UICollectionView!{
-        didSet{
-            chartCollection.dataSource = self
-            chartCollection.delegate = self
-            
-            let nib = UINib(nibName: "ChartCVCell", bundle: nil)
-            chartCollection.register(nib, forCellWithReuseIdentifier: "ChartCell")
-        }
-    }
+    @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var categoriesTV: UITableView!{
         didSet{
             categoriesTV.dataSource = self
@@ -40,14 +57,28 @@ class DashboardVC: UIViewController {
             
         }
     }
-    lazy var barChartView :  BarChartView = {
-        let chartView = BarChartView()
-        chartView.backgroundColor = .systemBlue
+    lazy var lineChart :  LineChartView = {
+        let chartView = LineChartView(frame: chartView.bounds)
+        chartView.backgroundColor = .white
         return chartView
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        chartView.addSubview(lineChart)
+        print(lineChart.bounds)
+        let dataSet = LineChartDataSet(entries: dataEntries, label: "Data Set")
+        dataSet.colors = [.blue]
+        dataSet.circleColors = [.blue]
+        dataSet.drawValuesEnabled = false
 
+        let data = LineChartData(dataSet: dataSet)
+        lineChart.data = data
+        lineChart.chartDescription.text = "Line Chart"
+        lineChart.xAxis.labelPosition = .bottom
+        lineChart.xAxis.granularityEnabled = true
+        lineChart.xAxis.granularity = 1.0
+        lineChart.rightAxis.enabled = false
+        lineChart.legend.enabled = false
        
     }
     
@@ -80,46 +111,7 @@ extension DashboardVC : UITableViewDataSource{
     
     
 }
-//MARK: -  CollectionView Extensions
-extension DashboardVC : UICollectionViewDelegate{
-    
-}
-extension DashboardVC : UICollectionViewDataSource{
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChartCell", for: indexPath) as! ChartCVCell
-        self.barChartView.pinchZoomEnabled = false
-        self.barChartView.dragEnabled = false
-        self.barChartView.dragDecelerationEnabled = false
-        self.barChartView.scaleXEnabled = false
-        self.barChartView.scaleYEnabled = false
-        self.barChartView.zoomOut()
-    
-        cell.addSubview(barChartView)
-        barChartView.centerInSuperview()
-        barChartView.width(to:cell)
-        barChartView.heightToWidth(of: cell)
-        setData()
-        return cell
-    }
-    
-    
-}
-extension DashboardVC : UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - 10, height: self.view.frame.height * 0.22)
-    }
-     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        // set the spacing around the cells here
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-}
+
 
 // MARK: - Chart Extensions
 
@@ -127,9 +119,5 @@ extension DashboardVC : ChartViewDelegate{
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         print(entry)
     }
-    func setData(){
-        let set = BarChartDataSet(entries: dummyData, label: "for test")
-        let data = BarChartData(dataSet: set)
-        barChartView.data = data
-    }
+    
 }
